@@ -1,0 +1,2297 @@
+<!doctype html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>BOOK A MAID</title>
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="css/all.css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body onLoad="pageLoad()">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<!-- main navigation -->
+			<nav id="nav" class="collapse">
+				<div class="container">
+					<ul class="list-inline">
+						<li class="visible-xs-inline-block"><a href="#"><span class="icon-home"></span>HOME</a></li>
+						<li><a href="#"><span class="icon-services"></span>services</a></li>
+						<li><a href="#"><span class="icon-questions"></span>how it works</a></li>
+						<li><a href="faq.html"><span class="icon-qa"></span>f.a.q’s</a></li>
+						<li><a href="#"><span class="icon-contact"></span>contact us</a></li>
+						<li class="author"> <!-- use class "user-active" for vissible SIGN OUT option -->
+							<a href="#login-form" class="login" data-toggle="modal"><span class="icon-login"></span>sign in</a>
+							<a href="#" class="logout"><span class="icon-logout"></span>SIGN OUT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-2 visible-xs">
+						<a href="#nav" class="navbar-toggle" data-toggle="collapse" aria-expanded="false">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="title">MENU</span>
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<!-- page logo -->
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="BOOK A MAID" class="hidden-xs">
+								<img src="images/logo2.png" alt="BOOK A MAID" class="visible-xs">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-2 text-right visible-xs">
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel icon-tel visible-xs-inline-block"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main" role="main" class="container">
+			<!-- customer detail -->
+			<section class="customer-detail">
+				<header class="header">
+					<div class="row">
+						<div class="col-sm-4">
+							<h1>Mark Anderson</h1>
+						</div>
+						<div class="col-sm-4 text-center">
+							<strong class="balance">Balance: <span>$120.00</span></strong>
+						</div>
+						<div class="col-sm-4 text-right">
+							<a href="#" class="btn popup-opener" data-target="#new-booking">BOOK APPOINTMENT</a>
+						</div>
+					</div>
+				</header>
+				<div class="info">
+					<div class="row">
+						<div class="col-md-7">
+							<ul class="list-unstyled">
+								<li><strong>Customer#:</strong> <span>nr1245</span></li>
+								<li><strong>Opened:</strong> <time datetime="2015-08-22">04/27/12</time> <span>by Susan A.</span></li>
+								<li><strong>Last Service:</strong> <time datetime="2015-08-22">06/25/14</time></li>
+								<li class="visible-sm-inline-block"><a href="#" class="popup-opener" data-target="#reset-password">Reset Password</a></li>
+								<li class="visible-sm-inline-block">
+									<input type="checkbox" id="active" autocomplete="off" checked>
+									<label for="active">Active</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-5 hidden-sm">
+							<ul class="account list-unstyled">
+								<li><a href="#" class="popup-opener" data-target="#reset-password">Reset Password</a></li>
+								<li>
+									<input type="checkbox" id="active" autocomplete="off" checked>
+									<label for="active">Active</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<!-- personal information -->
+						<div class="personal-info">
+							<div class="address">
+								<div class="heading-bar">
+									<div class="select-location">
+										<a href="#" class="opener"><span>home</span> (primary)</a>
+										<ul class="list-unstyled">
+											<li class="active"><a href="#">Home</a></li>
+											<li><a href="#">Farm house</a></li>
+											<li><a href="#">Hampton Bays</a></li>
+										</ul>
+									</div>
+									<h2><span>Contact Information</span></h2>
+								</div>
+								<dl>
+									<dt>Address:</dt>
+									<dd>545 Lexington Avenue, <br>New York, NY, 10023 Apt: D2</dd>
+									<dt>Cell Phone:</dt>
+									<dd>718-836-7849</dd>
+									<dt>Alt. Phone:</dt>
+									<dd>917-348-0978</dd>
+									<dt>Email:</dt>
+									<dd>mark.anderson@companyname.com</dd>
+								</dl>
+								<ul class="list-unstyled controller">
+									<li><a href="#" class="popup-opener" data-target="#edit-personal-info">Edit Information</a></li>
+									<li><a href="#" class="popup-opener" data-target="#add-location">Add Location</a></li>
+								</ul>
+								<!-- Add location popup -->
+								<form class="popup-pers-info"></form>
+							</div>
+							<div class="card-info">
+								<h2><span>Billing Information</span></h2>
+								<ul class="list-unstyled">
+									<li>Credit Card: **** **** **** 0215</li>
+									<li>Mastercard</li>
+								</ul>
+								<a href="#" class="btn-edit popup-opener" data-target="#edit-card">Edit Credit Card</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<!-- user information -->
+						<section class="user-info">
+							<ul class="tabs list-unstyled" role="tablist">
+								<li class="active"><a href="#map" role="tab" data-toggle="tab">Map</a></li>
+								<li><a href="#points" role="tab" data-toggle="tab">Points</a></li>
+								<li><a href="#notes" role="tab" data-toggle="tab">Notes</a></li>
+								<li><a href="#email-tab" role="tab" data-toggle="tab">Email</a></li>
+							</ul>
+							<div class="tab-content">
+								<!-- map tab -->
+								<div class="map tab-pane active" id="map">
+									<div class="map-holder">
+										<!--<iframe src="" frameborder="0"></iframe>-->
+									</div>
+									<div class="box">
+										<div class="custom-select bottom" id="select-author">
+											<strong class="form-control">Alexandra T</strong>
+											<ul class="list-unstyled">
+												<li><a href="javascript:;">Abby S</a></li>
+												<li><a href="javascript:;">Alexandra T</a></li>
+												<li><a href="javascript:;">Anissa P</a></li>
+												<li><a href="javascript:;">Beatrice D</a></li>
+												<li><a href="javascript:;">Carol G</a></li>
+												<li><a href="javascript:;">jimmy W</a></li>
+												<li><a href="javascript:;">Thelma R</a></li>
+												<li><a href="javascript:;">Theresa J</a></li>
+												<li><a href="javascript:;">Theresa A</a></li>
+												<li><a href="javascript:;">Thorin D</a></li>
+											</ul>
+											<input type="hidden" class="hidden-field">
+										</div>
+										<ul class="rooms list-unstyled">
+											<li>3 Bedrooms</li>
+											<li>2 Bathrooms</li>
+										</ul>
+									</div>
+								</div>
+								<!-- points tab -->
+								<div class="points tab-pane" id="points">
+									<form action="#">
+										<h2>Total Points: <span>40</span></h2>
+										<input type="text" class="form-control">
+										<button type="submit" class="btn btn-primary">Award Points</button>
+									</form>
+									<h3><span>Point History</span></h3>
+									<div class="history">
+										<table class="limited-items">
+											<tr>
+												<td><time datetime="2015-08-26">3/17/15</time></td>
+												<td>10 points earned</td>
+												<td>40</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">3/15/15</time></td>
+												<td>30 points earned</td>
+												<td>30</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">2/24/15</time></td>
+												<td>50 points redeemed</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">2/10/15</time></td>
+												<td>10 points earned</td>
+												<td>50</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">1/23/15</time></td>
+												<td>10 points earned</td>
+												<td>40</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">3/17/15</time></td>
+												<td>10 points earned</td>
+												<td>60</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">3/15/15</time></td>
+												<td>30 points earned</td>
+												<td>30</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">2/24/15</time></td>
+												<td>50 points redeemed</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">2/10/15</time></td>
+												<td>10 points earned</td>
+												<td>50</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">1/23/15</time></td>
+												<td>10 points earned</td>
+												<td>40</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">3/17/15</time></td>
+												<td>10 points earned</td>
+												<td>60</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">3/15/15</time></td>
+												<td>30 points earned</td>
+												<td>30</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">2/24/15</time></td>
+												<td>50 points redeemed</td>
+												<td>0</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">2/10/15</time></td>
+												<td>10 points earned</td>
+												<td>50</td>
+											</tr>
+											<tr>
+												<td><time datetime="2015-08-26">1/23/15</time></td>
+												<td>10 points earned</td>
+												<td>40</td>
+											</tr>
+										</table>
+									</div>
+									<a href="javascript:;" class="more">Show more activity</a>
+								</div>
+								<!-- notes tab -->
+								<div class="tab-pane" id="notes">
+									<div class="notes auto-scroll">
+										<blockquote class="your">
+											<q>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiclatis unde omnis iste natus error sit voluptatem.</q>
+											<cite><time datetime="2015-08-27">March 13th, 2015, 1:25pm</time></cite>
+										</blockquote>
+										<blockquote>
+											<q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</q>
+											<cite><time datetime="2015-08-27">March 12th, 2015, 3:20pm</time></cite>
+										</blockquote>
+									</div>
+									<div class="note-pager">
+										<a href="javascript:;" class="add-note">Add New Note</a>
+										<ul class="list-unstyled">
+											<li><a href="#"><i class="arrow left"></i></a></li>
+											<li class="active"><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+											<li><a href="#"><i class="arrow right"></i></a></li>
+										</ul>
+									</div>
+									<form action="#" class="new-note">
+										<textarea class="form-control"></textarea>
+										<div class="buttons">
+											<button type="submit" class="btn btn-primary">Add Note</button>
+											<label class="custom-checkbox" for="set-alert">
+												<input type="checkbox" id="set-alert" autocomplete="off">
+												<span class="custom-input"></span>
+												<span>Set as alert</span>
+											</label>
+											<a href="javascript:;" class="btn-cancel">Cancel</a>
+										</div>
+									</form>
+								</div>
+								<!-- email tab -->
+								<form action="javascript:;" class="email-form tab-pane" id="email-tab">
+									<textarea></textarea>
+									<button type="submit" class="btn btn-primary">Add Note</button>
+									<span class="message">Your email was successfully sent</span>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</section>
+			<!-- Upcoming Appointments -->
+			<section class="upcoming-appointments">
+				<header class="header">
+					<h1>Mark's Appointments:</h1>
+				</header>
+				<div class="holder">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="recurring">
+								<i class="icon-every-loader"></i>
+								<strong class="heading">RECURRING APPOINTMENTS:</strong>
+								<h2>Every Two Weeks</h2>
+								<p>on Wednesdays at 10:00-11:00am</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<strong class="heading">Next Appointment:</strong>
+							<h2>Wednesday, September 30th at 10:00-11:00am</h2>
+							<p>Your primary address</p>
+						</div>
+					</div>
+					<ul class="list-unstyled buttons">
+						<li><a href="#" class="btn reschedule popup-opener" data-target="#reschedule">RESCHEDULE</a></li>
+						<li><a href="#" class="btn cancel popup-opener" data-target="#schedule-cancel">CANCEL</a></li>
+					</ul>
+				</div>
+			</section>
+			<!-- Your Appointments -->
+			<section class="your-appointments">
+				<div class="tabs">
+					<ul class="nav nav-tabs hidden-xs" role="tablist">
+						<li class="active"><a href="#upcoming-appointments" role="tab" data-toggle="tab">Upcoming <span class="hidden-md hidden-sm">Appointments</span><span class="visible-md-inline visible-sm-inline">Appts</span></a></li>
+						<li><a href="#past-appointments" role="tab" data-toggle="tab">Past <span class="hidden-md hidden-sm">Appointments</span><span class="visible-md-inline visible-sm-inline">Appts</span></a></li>
+						<li><a href="#calender-tab" role="tab" data-toggle="tab">Calendar</a></li>
+						<li><a href="#billing-history" role="tab" data-toggle="tab">Billing History</a></li>
+					</ul>
+					<div class="custom-select visible-xs" id="your-appointments">
+						<strong class="form-control">Upcoming Appointments</strong>
+						<ul class="list-unstyled" role="tablist">
+							<li class="active"><a href="#upcoming-appointments" role="tab" data-toggle="tab">Upcoming Appointments</a></li>
+							<li><a href="#past-appointments" role="tab" data-toggle="tab">Past Appointments</a></li>
+							<li><a href="javascript:;" class="btn-calender">Calendar</a></li>
+							<li><a href="#billing-history" role="tab" data-toggle="tab">Billing History</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="upcoming-appointments">
+						<!-- appointments posts -->
+						<div class="appoint-posts">
+							<div class="post">
+								<a class="opener" href="javascript:;">
+									<h3>Wed. <span>primary address</span></h3>
+									<time datetime="2015-07-02">Mar. 18th, 2015 <span>10:00-11:00am</span></time>
+									<strong class="price">$46</strong>
+								</a>
+								<header class="post-header">
+									<div class="date-box">
+										<strong class="date"><span class="month">MARCH</span>18</strong>
+										<div class="date-info">
+											<h3>Wednesday</h3>
+											<time datetime="2015-07-02">March 18th, 2015 10:00-11:00am</time>
+											<address class="hidden-xs"><span class="hidden-sm hidden-xs">Your </span>primary address</address>
+										</div>
+									</div>
+									<div class="title">
+										<a href="#" class="author assign"><span>Alexandra T</span></a>
+										<div class="author-dropdown">
+											<input type="search" class="form-control">
+											<ul class="list-unstyled">
+												<li><a href="javascript:;">Abby S</a></li>
+												<li><a href="javascript:;">Alexandra T</a></li>
+												<li><a href="javascript:;">Anissa P</a></li>
+												<li><a href="javascript:;">Beatrice D</a></li>
+												<li><a href="javascript:;">Carol G</a></li>
+												<li><a href="javascript:;">jimmy W</a></li>
+												<li><a href="javascript:;">Thelma R</a></li>
+												<li><a href="javascript:;">Theresa J</a></li>
+												<li><a href="javascript:;">Theresa A</a></li>
+												<li><a href="javascript:;">Thorin D</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="price-box">
+										<strong class="price">46</strong>
+									</div>
+									<div class="status">
+										<a href="#" class="status-opener"><span class="scheduled">Scheduled</span></a>
+										<ul class="list-unstyled status-dropdown">
+											<li><a href="javascript:;"><span>In Progress</span></a></li>
+											<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+											<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+											<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+											<li><a href="javascript:;"><span>In route</span></a></li>
+											<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+										</ul>
+										<input type="hidden" class="hidden-field">
+									</div>
+								</header>
+								<div class="slide">
+									<header class="slide-header">
+										<a href="javascript:;" class="btn-back">back</a>
+										<div class="date">
+											<time datetime="2015-07-02">Wed. March 18th</time>
+											<address>Primary address </address>
+											<strong class="price">$46</strong>
+										</div>
+										<ul class="list-unstyled">
+											<li><span class="time">10-11 am Arrival</span></li>
+											<li>
+												<div class="title">
+													<a href="#" class="author assign"><span>Alexandra T</span></a>
+													<div class="author-dropdown">
+														<input type="search" class="form-control">
+														<ul class="list-unstyled">
+															<li><a href="javascript:;">Abby S</a></li>
+															<li><a href="javascript:;">Alexandra T</a></li>
+															<li><a href="javascript:;">Anissa P</a></li>
+															<li><a href="javascript:;">Beatrice D</a></li>
+															<li><a href="javascript:;">Carol G</a></li>
+															<li><a href="javascript:;">jimmy W</a></li>
+															<li><a href="javascript:;">Thelma R</a></li>
+															<li><a href="javascript:;">Theresa J</a></li>
+															<li><a href="javascript:;">Theresa A</a></li>
+															<li><a href="javascript:;">Thorin D</a></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="status">
+													<a href="#" class="status-opener"><span class="scheduled">Scheduled</span></a>
+													<ul class="list-unstyled status-dropdown">
+														<li><a href="javascript:;"><span>In Progress</span></a></li>
+														<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+														<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+														<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+														<li><a href="javascript:;"><span>In route</span></a></li>
+														<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+													</ul>
+													<input type="hidden" class="hidden-field">
+												</div>
+											</li>
+										</ul>
+									</header>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="order-info">
+												<h3><span>Order Information</span></h3>
+												<dl>
+													<dt>Order number: </dt>
+													<dd><span>nr. 432</span></dd>
+													<dt>Ordered on:</dt>
+													<dd><span>March, 1st, 2015</span></dd>
+													<dt>Points Earned</dt>
+													<dd><span>46</span></dd>
+													<dt>Points Total:</dt>
+													<dd><span>237</span></dd>
+												</dl>
+												<div class="Instruct">
+													<h3><span>Special Instructions</span><span class="optional">Optional</span></h3>
+													<div class="comments">
+														<blockquote>
+															<q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</q>
+															<cite>March 2015, 3:20pm</cite>
+														</blockquote>
+													</div>
+													<!-- comment form -->
+													<form action="#" class="comment-form" id="comment-form1">
+														<a href="javascript:;" class="btn-comment">Add comment</a>
+														<div class="collapse" >
+															<label>comment</label>
+															<textarea class="form-control"></textarea>
+															<div class="clearfix">
+																<button type="submit" class="btn btn-primary">SAVE</button>
+																<a href="javascript:;" class="cancel">Cancel</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<!-- Booking Summary -->
+											<div class="summary">
+												<h3>Book A Maid Summary</h3>
+												<address>Wed<span class="hidden-sm hidden-xs">nesday</span>, March 18th, 2015 - Arrival 10:00 - 11:00 AM <br>545 Lexington Ave<span class="hidden-sm hidden-xs">nue</span>, New York, NY, 10023, Apt F14</address>
+												<strong class="duration"><span>Duration:</span> 3 hours of cleaning</strong>
+												<div class="detail">
+													<dl>
+														<dt>Standard cleaning <span class="frequency">Every week:</span></dt>
+														<dd><span>$26.00</span></dd>
+													</dl>
+													<dl class="inside">
+														<dt>Inside fridge:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Cleaning supplies:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Inside oven:</dt>
+														<dd><span>$10.00</span></dd>
+													</dl>
+												</div>
+												<dl>
+													<dt>Tax</dt>
+													<dd><span>$10.00</span></dd>
+												</dl>
+												<div class="result">
+													<div class="total-bill clearfix">
+														<strong class="heading">Total:</strong>
+														<strong class="price">$46.00</strong>
+													</div>
+													<dl>
+														<dt>Paid: (visa ending 8967)</dt>
+														<dd><span>$46.00</span></dd>
+														<dt>Balance:</dt>
+														<dd><span>$0.00</span></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-holder text-center">
+										<a href="#" class="btn btn-edit">Edit</a>
+										<a href="javascript:;" class="btn btn-reshedule popup-opener" data-target="#reschedule">RESCHEDULE</a>
+										<a href="javascript:;" class="btn btn-cancel popup-opener" data-target="#schedule-cancel">CANCEL</a>
+										<span>
+											<a href="javascript:;" class="btn btn-payment popup-opener" data-target="#payment">Payment</a>
+											<a href="javascript:;" class="btn btn-refund popup-opener" data-target="#refund">Refund</a>
+										</span>
+										<span>
+											<a href="#" class="btn btn-email">Email</a>
+											<a href="#" class="btn btn-print">Print</a>
+										</span>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn-opener">opener</a>
+							</div>
+							<div class="post hidden-sm">
+								<a class="opener" href="javascript:;">
+									<h3>Wed. <span>primary address</span></h3>
+									<time datetime="2015-07-02">Mar. 25th, 2015 <span>10:00-11:00am</span></time>
+									<strong class="price">$73</strong>
+								</a>
+								<header class="post-header">
+									<div class="date-box">
+										<strong class="date"><span class="month">MARCH</span>30</strong>
+										<div class="date-info">
+											<h3>SATURDAY</h3>
+											<time datetime="2015-07-02">March 30th, 2015 3:00-4:00pm</time>
+											<address class="hidden-xs">Your secondary address</address>
+										</div>
+									</div>
+									<div class="title">
+										<a href="#" class="author"><span>unassigned</span></a>
+										<div class="author-dropdown">
+											<input type="search" class="form-control">
+											<ul class="list-unstyled">
+												<li><a href="javascript:;"><span>Abby S</span></a></li>
+												<li><a href="javascript:;"><span>Alexandra T</span></a></li>
+												<li><a href="javascript:;"><span>Anissa P</span></a></li>
+												<li><a href="javascript:;"><span>Beatrice D</span></a></li>
+												<li><a href="javascript:;"><span>Carol G</span></a></li>
+												<li><a href="javascript:;"><span>jimmy W</span></a></li>
+												<li><a href="javascript:;"><span>Thelma R</span></a></li>
+												<li><a href="javascript:;"><span>Theresa J</span></a></li>
+												<li><a href="javascript:;"><span>Theresa A</span></a></li>
+												<li><a href="javascript:;"><span>Thorin D</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="price-box">
+										<strong class="price">73</strong>
+									</div>
+									<div class="status">
+										<a href="#" class="status-opener"><span>In Progress</span></a>
+										<ul class="list-unstyled status-dropdown">
+											<li><a href="javascript:;"><span>In Progress</span></a></li>
+											<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+											<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+											<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+											<li><a href="javascript:;"><span>In route</span></a></li>
+											<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+										</ul>
+										<input type="hidden" class="hidden-field">
+									</div>
+								</header>
+								<div class="slide">
+									<header class="slide-header">
+										<a href="javascript:;" class="btn-back">back</a>
+										<div class="date">
+											<time datetime="2015-07-02">Sat. March 25th</time>
+											<address>Primary address </address>
+											<strong class="price">$73</strong>
+										</div>
+										<ul class="list-unstyled">
+											<li><span class="time">03-04 am Arrival</span></li>
+											<li>
+												<div class="title">
+													<a href="#" class="author"><span>unassigned</span></a>
+													<div class="author-dropdown">
+														<input type="search" class="form-control">
+														<ul class="list-unstyled">
+															<li><a href="javascript:;"><span>Abby S</span></a></li>
+															<li><a href="javascript:;"><span>Alexandra T</span></a></li>
+															<li><a href="javascript:;"><span>Anissa P</span></a></li>
+															<li><a href="javascript:;"><span>Beatrice D</span></a></li>
+															<li><a href="javascript:;"><span>Carol G</span></a></li>
+															<li><a href="javascript:;"><span>jimmy W</span></a></li>
+															<li><a href="javascript:;"><span>Thelma R</span></a></li>
+															<li><a href="javascript:;"><span>Theresa J</span></a></li>
+															<li><a href="javascript:;"><span>Theresa A</span></a></li>
+															<li><a href="javascript:;"><span>Thorin D</span></a></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="status">
+													<a href="#" class="status-opener"><span>In Progress</span></a>
+													<ul class="list-unstyled status-dropdown">
+														<li><a href="javascript:;"><span>In Progress</span></a></li>
+														<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+														<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+														<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+														<li><a href="javascript:;"><span>In route</span></a></li>
+														<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+													</ul>
+													<input type="hidden" class="hidden-field">
+												</div>
+											</li>
+										</ul>
+									</header>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="order-info">
+												<h3><span>Order Information</span></h3>
+												<dl>
+													<dt>Order number: </dt>
+													<dd><span>nr. 432</span></dd>
+													<dt>Ordered on:</dt>
+													<dd><span>March, 1st, 2015</span></dd>
+													<dt>Points Earned</dt>
+													<dd><span>46</span></dd>
+													<dt>Points Total:</dt>
+													<dd><span>237</span></dd>
+												</dl>
+												<div class="Instruct">
+													<h3><span>Special Instructions</span><span class="optional">Optional</span></h3>
+													<div class="comments">
+														<blockquote class="your">
+															<q>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiclatis unde omnis iste natus error sit voluptatem.</q>
+															<cite>March 2015, 3:20pm</cite>
+														</blockquote>
+														<blockquote>
+															<q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</q>
+															<cite>March 2015, 3:20pm</cite>
+														</blockquote>
+													</div>
+													<!-- comment form -->
+													<form action="#" class="comment-form" id="comment-form2">
+														<a href="javascript:;" class="btn-comment">Add comment</a>
+														<div class="collapse" >
+															<label>comment</label>
+															<textarea class="form-control"></textarea>
+															<div class="clearfix">
+																<button type="submit" class="btn btn-primary">SAVE</button>
+																<a href="javascript:;" class="cancel">Cancel</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<!-- Booking Summary -->
+											<div class="summary">
+												<h3>Book A Maid Summary</h3>
+												<address>Wed<span class="hidden-sm hidden-xs">nesday</span>, March 18th, 2015 - Arrival 10:00 - 11:00 AM <br>545 Lexington Ave<span class="hidden-sm hidden-xs">nue</span>, New York, NY, 10023, Apt F14</address>
+												<strong class="duration"><span>Duration:</span> 3 hours of cleaning</strong>
+												<div class="detail">
+													<dl>
+														<dt>Standard cleaning <span class="frequency">Every week:</span></dt>
+														<dd><span>$26.00</span></dd>
+													</dl>
+													<dl class="inside">
+														<dt>Inside fridge:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Cleaning supplies:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Inside oven:</dt>
+														<dd><span>$10.00</span></dd>
+													</dl>
+												</div>
+												<dl>
+													<dt>Tax</dt>
+													<dd><span>$10.00</span></dd>
+												</dl>
+												<div class="result">
+													<div class="total-bill clearfix">
+														<strong class="heading">Total:</strong>
+														<strong class="price">$46.00</strong>
+													</div>
+													<dl>
+														<dt>Paid: (visa ending 8967)</dt>
+														<dd><span>$46.00</span></dd>
+														<dt>Balance:</dt>
+														<dd><span>$0.00</span></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-holder text-center">
+										<a href="#" class="btn btn-edit">Edit</a>
+										<a href="javascript:;" class="btn btn-reshedule popup-opener" data-target="#reschedule">RESCHEDULE</a>
+										<a href="javascript:;" class="btn btn-cancel popup-opener" data-target="#schedule-cancel">CANCEL</a>
+										<span>
+											<a href="javascript:;" class="btn btn-payment popup-opener" data-target="#payment">Payment</a>
+											<a href="javascript:;" class="btn btn-refund popup-opener" data-target="#refund">Refund</a>
+										</span>
+										<span>
+											<a href="#" class="btn btn-email">Email</a>
+											<a href="#" class="btn btn-print">Print</a>
+										</span>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn-opener">opener</a>
+							</div>
+							<div class="post">
+								<a class="opener" href="javascript:;">
+									<h3>SAT. <span>beach house</span></h3>
+									<time datetime="2015-07-02">Mar. 28th, 2015 <span>10:00-3:00pm</span></time>
+									<strong class="price">$104</strong>
+								</a>
+								<header class="post-header">
+									<div class="date-box">
+										<strong class="date"><span class="month">APRIL</span>01</strong>
+										<div class="date-info">
+											<h3>Wednesday</h3>
+											<time datetime="2015-07-02">April 1st, 2015 10:00-11:00am</time>
+											<address class="hidden-xs">Your primary address</address>
+										</div>
+									</div>
+									<div class="title">
+										<a href="#" class="author"><span>unassigned</span></a>
+										<div class="author-dropdown">
+											<input type="search" class="form-control">
+											<ul class="list-unstyled">
+												<li><a href="javascript:;"><span>Abby S</span></a></li>
+												<li><a href="javascript:;"><span>Alexandra T</span></a></li>
+												<li><a href="javascript:;"><span>Anissa P</span></a></li>
+												<li><a href="javascript:;"><span>Beatrice D</span></a></li>
+												<li><a href="javascript:;"><span>Carol G</span></a></li>
+												<li><a href="javascript:;"><span>jimmy W</span></a></li>
+												<li><a href="javascript:;"><span>Thelma R</span></a></li>
+												<li><a href="javascript:;"><span>Theresa J</span></a></li>
+												<li><a href="javascript:;"><span>Theresa A</span></a></li>
+												<li><a href="javascript:;"><span>Thorin D</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="price-box">
+										<strong class="price">46</strong>
+									</div>
+									<div class="status">
+										<a href="#" class="status-opener"><span class="cancelled">Cancelled</span></a>
+										<ul class="list-unstyled status-dropdown">
+											<li><a href="javascript:;"><span>In Progress</span></a></li>
+											<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+											<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+											<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+											<li><a href="javascript:;"><span>In route</span></a></li>
+											<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+										</ul>
+										<input type="hidden" class="hidden-field">
+									</div>
+								</header>
+								<div class="slide">
+									<header class="slide-header">
+										<a href="javascript:;" class="btn-back">back</a>
+										<div class="date">
+											<time datetime="2015-07-02">Wed. March 28th</time>
+											<address>Primary address </address>
+											<strong class="price">$104</strong>
+										</div>
+										<ul class="list-unstyled">
+											<li><span class="time">10-11 am Arrival</span></li>
+											<li>
+												<div class="title">
+													<a href="#" class="author"><span>unassigned</span></a>
+													<div class="author-dropdown">
+														<input type="search" class="form-control">
+														<ul class="list-unstyled">
+															<li><a href="javascript:;"><span>Abby S</span></a></li>
+															<li><a href="javascript:;"><span>Alexandra T</span></a></li>
+															<li><a href="javascript:;"><span>Anissa P</span></a></li>
+															<li><a href="javascript:;"><span>Beatrice D</span></a></li>
+															<li><a href="javascript:;"><span>Carol G</span></a></li>
+															<li><a href="javascript:;"><span>jimmy W</span></a></li>
+															<li><a href="javascript:;"><span>Thelma R</span></a></li>
+															<li><a href="javascript:;"><span>Theresa J</span></a></li>
+															<li><a href="javascript:;"><span>Theresa A</span></a></li>
+															<li><a href="javascript:;"><span>Thorin D</span></a></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="status">
+													<a href="#" class="status-opener"><span class="cancelled">Cancelled</span></a>
+													<ul class="list-unstyled status-dropdown">
+														<li><a href="javascript:;"><span>In Progress</span></a></li>
+														<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+														<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+														<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+														<li><a href="javascript:;"><span>In route</span></a></li>
+														<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+													</ul>
+													<input type="hidden" class="hidden-field">
+												</div>
+											</li>
+										</ul>
+									</header>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="order-info">
+												<h3><span>Order Information</span></h3>
+												<dl>
+													<dt>Order number: </dt>
+													<dd><span>nr. 432</span></dd>
+													<dt>Ordered on:</dt>
+													<dd><span>March, 1st, 2015</span></dd>
+													<dt>Points Earned</dt>
+													<dd><span>46</span></dd>
+													<dt>Points Total:</dt>
+													<dd><span>237</span></dd>
+												</dl>
+												<div class="Instruct">
+													<h3><span>Special Instructions</span><span class="optional">Optional</span></h3>
+													<div class="comments">
+														<blockquote class="your">
+															<q>Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. Sed ut perspiclatis unde omnis iste natus error sit voluptatem.</q>
+															<cite>March 2015, 3:20pm</cite>
+														</blockquote>
+														<blockquote>
+															<q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</q>
+															<cite>March 2015, 3:20pm</cite>
+														</blockquote>
+													</div>
+													<!-- comment form -->
+													<form action="#" class="comment-form" id="comment-form3">
+														<a href="javascript:;" class="btn-comment">Add comment</a>
+														<div class="collapse" >
+															<label>comment</label>
+															<textarea class="form-control"></textarea>
+															<div class="clearfix">
+																<button type="submit" class="btn btn-primary">SAVE</button>
+																<a href="javascript:;" class="cancel">Cancel</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<!-- Booking Summary -->
+											<div class="summary">
+												<h3>Book A Maid Summary</h3>
+												<address>Wed<span class="hidden-sm hidden-xs">nesday</span>, March 18th, 2015 - Arrival 10:00 - 11:00 AM <br>545 Lexington Ave<span class="hidden-sm hidden-xs">nue</span>, New York, NY, 10023, Apt F14</address>
+												<strong class="duration"><span>Duration:</span> 3 hours of cleaning</strong>
+												<div class="detail">
+													<dl>
+														<dt>Standard cleaning <span class="frequency">Every week:</span></dt>
+														<dd><span>$26.00</span></dd>
+													</dl>
+													<dl class="inside">
+														<dt>Inside fridge:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Cleaning supplies:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Inside oven:</dt>
+														<dd><span>$10.00</span></dd>
+													</dl>
+												</div>
+												<dl>
+													<dt>Tax</dt>
+													<dd><span>$10.00</span></dd>
+												</dl>
+												<div class="result">
+													<div class="total-bill clearfix">
+														<strong class="heading">Total:</strong>
+														<strong class="price">$46.00</strong>
+													</div>
+													<dl>
+														<dt>Paid: (visa ending 8967)</dt>
+														<dd><span>$46.00</span></dd>
+														<dt>Balance:</dt>
+														<dd><span>$0.00</span></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-holder text-center">
+										<a href="#" class="btn btn-edit">Edit</a>
+										<a href="javascript:;" class="btn btn-reshedule popup-opener" data-target="#reschedule">RESCHEDULE</a>
+										<a href="javascript:;" class="btn btn-cancel popup-opener" data-target="#schedule-cancel">CANCEL</a>
+										<span>
+											<a href="javascript:;" class="btn btn-payment popup-opener" data-target="#payment">Payment</a>
+											<a href="javascript:;" class="btn btn-refund popup-opener" data-target="#refund">Refund</a>
+										</span>
+										<span>
+											<a href="#" class="btn btn-email">Email</a>
+											<a href="#" class="btn btn-print">Print</a>
+										</span>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn-opener">opener</a>
+							</div>
+							<div class="post">
+								<a class="opener" href="javascript:;">
+									<h3>Wed. <span>primary address</span></h3>
+									<time datetime="2015-07-02">Apr. 2nd, 2015 <span>10:00-11:00am</span></time>
+									<strong class="price">$46</strong>
+								</a>
+								<header class="post-header">
+									<div class="date-box">
+										<strong class="date"><span class="month">SEPTEMBER</span>08</strong>
+										<div class="date-info">
+											<h3>Wednesday</h3>
+											<time datetime="2015-07-02">April 8th, 2015 10:00-11:00am</time>
+											<address class="hidden-xs">Your primary address</address>
+										</div>
+									</div>
+									<div class="title">
+										<a href="#" class="author"><span>unassigned</span></a>
+										<div class="author-dropdown">
+											<input type="search" class="form-control">
+											<ul class="list-unstyled">
+												<li><a href="javascript:;"><span>Abby S</span></a></li>
+												<li><a href="javascript:;"><span>Alexandra T</span></a></li>
+												<li><a href="javascript:;"><span>Anissa P</span></a></li>
+												<li><a href="javascript:;"><span>Beatrice D</span></a></li>
+												<li><a href="javascript:;"><span>Carol G</span></a></li>
+												<li><a href="javascript:;"><span>jimmy W</span></a></li>
+												<li><a href="javascript:;"><span>Thelma R</span></a></li>
+												<li><a href="javascript:;"><span>Theresa J</span></a></li>
+												<li><a href="javascript:;"><span>Theresa A</span></a></li>
+												<li><a href="javascript:;"><span>Thorin D</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="price-box">
+										<strong class="price">46</strong>
+									</div>
+									<div class="status">
+										<a href="#" class="status-opener"><span class="completed">Completed</span></a>
+										<ul class="list-unstyled status-dropdown">
+											<li><a href="javascript:;"><span>In Progress</span></a></li>
+											<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+											<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+											<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+											<li><a href="javascript:;"><span>In route</span></a></li>
+											<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+										</ul>
+										<input type="hidden" class="hidden-field">
+									</div>
+								</header>
+								<div class="slide">
+									<header class="slide-header">
+										<a href="javascript:;" class="btn-back">back</a>
+										<div class="date">
+											<time datetime="2015-07-02">Wed. April 8th</time>
+											<address>Primary address </address>
+											<strong class="price">$46</strong>
+										</div>
+										<ul class="list-unstyled">
+											<li><span class="time">10-11 am Arrival</span></li>
+											<li>
+												<div class="title">
+													<a href="#" class="author"><span>unassigned</span></a>
+													<div class="author-dropdown">
+														<input type="search" class="form-control">
+														<ul class="list-unstyled">
+															<li><a href="javascript:;"><span>Abby S</span></a></li>
+															<li><a href="javascript:;"><span>Alexandra T</span></a></li>
+															<li><a href="javascript:;"><span>Anissa P</span></a></li>
+															<li><a href="javascript:;"><span>Beatrice D</span></a></li>
+															<li><a href="javascript:;"><span>Carol G</span></a></li>
+															<li><a href="javascript:;"><span>jimmy W</span></a></li>
+															<li><a href="javascript:;"><span>Thelma R</span></a></li>
+															<li><a href="javascript:;"><span>Theresa J</span></a></li>
+															<li><a href="javascript:;"><span>Theresa A</span></a></li>
+															<li><a href="javascript:;"><span>Thorin D</span></a></li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="status">
+													<a href="#" class="status-opener"><span class="completed">Completed</span></a>
+													<ul class="list-unstyled status-dropdown">
+														<li><a href="javascript:;"><span>In Progress</span></a></li>
+														<li><a href="javascript:;"><span class="scheduled">Scheduled</span></a></li>
+														<li><a href="javascript:;"><span class="cancelled">Cancelled</span></a></li>
+														<li><a href="javascript:;"><span class="completed">Completed</span></a></li>
+														<li><a href="javascript:;"><span>In route</span></a></li>
+														<li><a href="javascript:;"><span class="accepted">Accepted</span></a></li>
+													</ul>
+													<input type="hidden" class="hidden-field">
+												</div>
+											</li>
+										</ul>
+									</header>
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="order-info">
+												<h3><span>Order Information</span></h3>
+												<dl>
+													<dt>Order number: </dt>
+													<dd><span>nr. 432</span></dd>
+													<dt>Ordered on:</dt>
+													<dd><span>March, 1st, 2015</span></dd>
+													<dt>Points Earned</dt>
+													<dd><span>46</span></dd>
+													<dt>Points Total:</dt>
+													<dd><span>237</span></dd>
+												</dl>
+												<div class="Instruct">
+													<h3><span>Special Instructions</span><span class="optional">Optional</span></h3>
+													<div class="comments">
+														<blockquote>
+															<q>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et.</q>
+															<cite>March 2015, 3:20pm</cite>
+														</blockquote>
+													</div>
+													<!-- comment form -->
+													<form action="#" class="comment-form"  id="comment-form4">
+														<a href="javascript:;" class="btn-comment">Add comment</a>
+														<div class="collapse" >
+															<label>comment</label>
+															<textarea class="form-control"></textarea>
+															<div class="clearfix">
+																<button type="submit" class="btn btn-primary">SAVE</button>
+																<a href="javascript:;" class="cancel">Cancel</a>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<!-- Booking Summary -->
+											<div class="summary">
+												<h3>Book A Maid Summary</h3>
+												<address>Wed<span class="hidden-sm hidden-xs">nesday</span>, March 18th, 2015 - Arrival 10:00 - 11:00 AM <br>545 Lexington Ave<span class="hidden-sm hidden-xs">nue</span>, New York, NY, 10023, Apt F14</address>
+												<strong class="duration"><span>Duration:</span> 3 hours of cleaning</strong>
+												<div class="detail">
+													<dl>
+														<dt>Standard cleaning <span class="frequency">Every week:</span></dt>
+														<dd><span>$26.00</span></dd>
+													</dl>
+													<dl class="inside">
+														<dt>Inside fridge:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Cleaning supplies:</dt>
+														<dd><span>$8.00</span></dd>
+														<dt>Inside oven:</dt>
+														<dd><span>$10.00</span></dd>
+													</dl>
+												</div>
+												<dl>
+													<dt>Tax</dt>
+													<dd><span>$10.00</span></dd>
+												</dl>
+												<div class="result">
+													<div class="total-bill clearfix">
+														<strong class="heading">Total:</strong>
+														<strong class="price">$46.00</strong>
+													</div>
+													<dl>
+														<dt>Paid: (visa ending 8967)</dt>
+														<dd><span>$46.00</span></dd>
+														<dt>Balance:</dt>
+														<dd><span>$0.00</span></dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="btn-holder text-center">
+										<a href="#" class="btn btn-edit">Edit</a>
+										<a href="javascript:;" class="btn btn-reshedule popup-opener" data-target="#reschedule">RESCHEDULE</a>
+										<a href="javascript:;" class="btn btn-cancel popup-opener" data-target="#schedule-cancel">CANCEL</a>
+										<span>
+											<a href="javascript:;" class="btn btn-payment popup-opener" data-target="#payment">Payment</a>
+											<a href="javascript:;" class="btn btn-refund popup-opener" data-target="#refund">Refund</a>
+										</span>
+										<span>
+											<a href="#" class="btn btn-email">Email</a>
+											<a href="#" class="btn btn-print">Print</a>
+										</span>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn-opener">opener</a>
+							</div>
+						</div>
+						<div class="filter-post">
+							<div class="custom-select bottom" id="select-month">
+								<strong class="form-control">To See More Appointments Select Month</strong>
+								<ul class="list-unstyled">
+									<li><a href="javascript:;">April</a></li>
+									<li><a href="javascript:;">May</a></li>
+									<li><a href="javascript:;">June</a></li>
+									<li><a href="javascript:;">July</a></li>
+									<li><a href="javascript:;">August</a></li>
+									<li><a href="javascript:;">September</a></li>
+									<li><a href="javascript:;">October</a></li>
+									<li><a href="javascript:;">November</a></li>
+									<li><a href="javascript:;">December</a></li>
+									<li><a href="javascript:;">January (2016)</a></li>
+									<li><a href="javascript:;">February (2016)</a></li>
+									<li><a href="javascript:;">March (2016)</a></li>
+									<li><a href="javascript:;" class="btn-range">Select Date Range</a></li>
+								</ul>
+								<input type="hidden" class="hidden-field">
+							</div>
+							<div class="date-range">
+								<div class="row">
+									<div class="col-sm-6 start">
+										<div class="title-bar">
+											<h3>Select Date Range Start:</h3>
+											<input type="text" class="date-start" onFocus="blur();">
+										</div>
+										<div class="range-calender"></div>
+									</div>
+									<div class="col-sm-6 end">
+										<div class="title-bar">
+											<h3>Select Date Range End:</h3>
+											<input type="text" class="date-end" onFocus="blur();">
+										</div>
+										<div class="range-calender"></div>
+									</div>
+								</div>
+								<div class="btn-holder">
+									<a href="javascript:;" class="btn btn-primary show">SHOW DATE RANGE</a>
+									<a href="javascript:;" class="cancel">Cancel</a>
+								</div>
+							</div>
+							<div class="show-range">
+								<div class="row">
+									<div class="col-lg-7 col-md-6">
+										<ul class="list-unstyled">
+											<li>
+												<h3>Date Range Start:</h3>
+												<time datetime="2015-07-16" class="date-start"></time>
+											</li>
+											<li>
+												<h3>Date Range End:</h3>
+												<time datetime="2015-07-16" class="date-end"></time>
+											</li>
+										</ul>
+									</div>
+									<div class="col-lg-5 col-md-6">
+										<div class="btn-holder">
+											<a href="javascript:;" class="btn btn-primary cancel">CLEAR RANGE</a>
+											<a href="javascript:;" class="btn btn-primary change">CHANGE RANGE</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="past-appointments">
+						<div class="empty">
+							<h3>You currently have no Past appointments</h3>
+							<p>Once you book appointments, you will be able to view them here.</p>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="calender-tab">
+						<div class="holder">
+							<strong class="heading visible-xs">Calendar View<a href="javascript:;" class="btn-close"></a></strong>
+							<div class="row">
+								<div class="col-lg-8 col-md-7">
+									<!-- appointment calender -->
+									<div class="appointment-calender">
+										<div id="appointment-datepicker" class="show-calender"></div>
+										<ul class="list-unstyled info">
+											<li class="today">Today</li>
+											<li class="booked">Booked</li>
+											<li class="completed">Completed</li>
+											<li class="unavailable">Unavailable</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<!-- appointment dates -->
+									<div class="appoint-dates">
+										<h2>Upcoming Appointments:</h2>
+										<div class="dates">
+											<ul class="list-unstyled">
+												<li><a href="#">Wed. Sept. 30th, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Oct. 7th, <span>10:00-11:00am</span></a></li>
+												<li class="secondary"><a href="#">Sat. Oct. 12th, <span>3:00-4:00pm</span></a></li>
+												<li><a href="#">Wed. Oct. 14th, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Oct. 21st, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Oct. 28th, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Nov. 3rd, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Nov. 10th, <span>10:00-11:00am</span></a></li>
+											</ul>
+										</div>
+										<a href="#" class="more">See more appoinments</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- billing history -->
+					<section role="tabpanel" class="tab-pane billing-history" id="billing-history">
+						<header class="header">
+							<strong class="date">Next Billing Date: <time datetime="2015/08/25">12/20/14</time></strong>
+							<div class="forms clearfix">
+								<div class="form">
+									<form action="javascript:;">
+										<input type="search" placeholder="Search location or Job #" class="form-control">
+										<button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
+									</form>
+								</div>
+								<div class="form">
+									<form action="javascript:;">
+										<ul class="list-unstyled">
+											<li>
+												<div class="custom-select" id="start-date">
+													<strong>
+														<input type="text" placeholder="Start Date" class="form-control">
+													</strong>
+													<div class="dropdown-menu">
+														<div class="calender"></div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="custom-select" id="end-date">
+													<strong>
+														<input type="text" placeholder="End Date" class="form-control">
+													</strong>
+													<div class="dropdown-menu">
+														<div class="calender"></div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
+									</form>
+								</div>
+							</div>
+						</header>
+						<table class="table-result">
+							<tr>
+								<th>Date</th>
+								<th>Job #</th>
+								<th>Location</th>
+								<th class="text-right">Amount</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">11/20/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">213765</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Paid-Amex</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-refund green popup-opener" data-target="#refund"><span>Refund</span></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">10/20/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">531452</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Paid - MC</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-refund green popup-opener" data-target="#refund"><span>Refund</span></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">9/20/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">245731</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Balance Due</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-primary popup-opener" data-target="#refund-info"><span>Refunded</span></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">9/15/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">84568</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Paid-Amex</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-refund green popup-opener" data-target="#refund"><span>Refund</span></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">8/20/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">469876</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Paid - MC</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-refund green popup-opener" data-target="#refund"><span>Refund</span></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">7/20/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">346378</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Balance Due</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-refund green popup-opener" data-target="#refund"><span>Refund</span></a></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><span class="txt"><time datetime="2015-08-20">6/20/14</time></span></td>
+								<td data-title="Job #"><span class="txt"><a href="#">352446</a></span></td>
+								<td data-title="Location"><span class="txt">Primary</span></td>
+								<td data-title="Amount" class="text-right"><span class="txt">$85:00</span></td>
+								<td data-title="Status"><span class="txt">Paid-Amex</span></td>
+								<td data-title="&nbsp;" class="text-right">
+									<span class="txt"><a href="#" class="btn btn-refund popup-opener" data-target="#refund"><span>Refund</span></a></span>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</div>
+			</section>
+		</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<!-- page logo -->
+						<div class="logo"><a href="#"><img src="images/logo2.png" alt="BOOK A MAID"></a></div>
+						<!-- address -->
+						<address>Book a Maid, LLC <br>12345 N. Street Name Rd. <br>City Name,ST 98765</address>
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel">Call Us: 1-866-673-1005</a>
+						<!-- social networks -->
+						<ul class="social-networks list-unstyled">
+							<li class="facebook"><a href="#">facebook</a></li>
+							<li class="twitter"><a href="#">twitter</a></li>
+							<li class="google-plus"><a href="#">google plus</a></li>
+							<li class="linkedin"><a href="#">linkedin</a></li>
+						</ul>
+						<!-- Copyright -->
+						<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+					</div>
+					<!-- footer navigations -->
+					<div class="col-md-9 col-sm-8">
+						<div class="row">
+							<nav class="col-md-3 col-sm-6">
+								<h3>About US</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">The Company</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Vision</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>Areas served</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Manhattan, NY</a></li>
+									<li><a href="#">Brooklyn, NY</a></li>
+									<li><a href="#">Queens, NY</a></li>
+									<li><a href="#">Long Ialand, NY</a></li>
+									<li><a href="#">Staten Island, NY</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>customer service</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Simple Pricing</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">F.A.Q.</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>contact</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Basic info</a></li>
+									<li><a href="#">Map</a></li>
+									<li><a href="#">Contact Form</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container visible-xs">
+				<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+			</div>
+		</footer>
+		<!-- Login form -->
+		<div class="modal login-form" id="login-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong class="heading">Login</strong>
+					</div>
+					<form action="#" class="modal-body">
+						<button type="button" class="btn btn-primary">Login with Facebook</button>
+						<strong class="divider"><span>or</span></strong>
+						<div class="form-group">
+							<label class="label" for="login-email">Email Address</label>
+							<input type="email" id="login-email" class="form-control">
+							<span class="help-block">This is not valid email address</span>
+						</div>
+						<div class="form-group password">
+							<label class="label" for="password">Password</label>
+							<input type="password" id="password" class="form-control">
+							<span class="help-block">This is a mandatory field</span>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-6">
+								<label for="remember-me" class="custom-checkbox">
+									<input type="checkbox" id="remember-me">
+									<span class="custom-input"></span>
+									<span class="custom-label">Remember Me</span>
+								</label>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a href="#" class="forgot">Forgot Password?</a>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-success">LOGIN</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<a href="javascript:;" class="overlay"></a>
+		<!-- reschedule popup -->
+		<div class="popup reschedule" id="reschedule">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<div class="step1">
+						<h2><i class="icon-warning"></i>Warning</h2>
+						<p>Cancellations within 48 hours of an appoinment will result in a $40.00 cancellation fee. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<div class="text-center">
+							<a href="javascript:;" class="btn btn-success popup-close">DON’T RESCHEDULE</a>
+							<a href="javascript:;" class="btn-normal continue">Continue Reschedule</a>
+						</div>
+					</div>
+					<form action="#" class="step2">
+						<h2>Reschedule booking</h2>
+						<div class="form-group date-holder">
+							<i class="icon-calender"></i>
+							<input type="text" id="reschedule-date" class="form-control" value="March 18th, 2015" onFocus="blur();">
+						</div>
+						<div class="custom-select" id="time">
+							<strong class="form-control">3:00-4:00pm</strong>
+							<ul class="list-unstyled">
+								<li><a href="javascript:;">8:00-9:00am</a></li>
+								<li><a href="javascript:;">10:00-11:00am</a></li>
+								<li><a href="javascript:;">11:00-11:50am</a></li>
+								<li><a href="javascript:;">12:00-1:00pm</a></li>
+								<li><a href="javascript:;">12:00-1:00pm</a></li>
+								<li><a href="javascript:;">1:00-2:00pm</a></li>
+								<li><a href="javascript:;">2:00-3:00pm</a></li>
+								<li><a href="javascript:;">3:00-4:00pm</a></li>
+								<li><a href="javascript:;">4:00-5:00pm</a></li>
+							</ul>
+							<input type="hidden" class="hidden-field" value="3:00-4:00pm">
+						</div>
+						<label for="reschedule-all" class="custom-checkbox">
+							<input type="checkbox" id="reschedule-all">
+							<span class="custom-input"></span>
+							<span>Reschedule all subsequent bookings</span>
+						</label>
+						<div class="text-center">
+							<a href="#" class="btn btn-success">Reschedule Booking</a>
+							<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- reschedule popup -->
+		<div class="popup schedule-cancel" id="schedule-cancel">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Cancel booking</h2>
+					<p>Are you sure you want to cancel?</p>
+					<ul class="list-unstyled">
+						<li>
+							<label for="moving-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="moving-reason">
+								<span class="custom-input"></span>
+								<span>Moving</span>
+							</label>
+						</li>
+						<li>
+							<label for="unsatisfied-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="unsatisfied-reason">
+								<span class="custom-input"></span>
+								<span>Unsatisfied</span>
+							</label>
+						</li>
+						<li>
+							<label for="expensive-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="expensive-reason">
+								<span class="custom-input"></span>
+								<span>Too expensive</span>
+							</label>
+						</li>
+						<li>
+							<label for="other-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="other-reason">
+								<span class="custom-input"></span>
+								<span>Other</span>
+							</label>
+						</li>
+						<li class="note-box">
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Other reason (optional)"></textarea>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</li>
+					</ul>
+					<label for="cancel-all" class="custom-checkbox cancel-all">
+						<input type="checkbox" id="cancel-all">
+						<span class="custom-input"></span>
+						<span>Cancel all future bookings</span>
+					</label>
+					<div class="text-center">
+						<a href="#" class="btn btn-success">Cancel Booking</a>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- invitation popup -->
+		<div class="popup invitation" id="invitation">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Earn free cleanings</h2>
+					<h3>Refer your friends!</h3>
+					<p>You will receive $50.00 off your next booking for each friend that completes a booking!</p>
+					<form action="javascript:;">
+						<div class="form-holder">
+							<button type="submit" class="btn btn-success">SEND</button>
+							<div class="text">
+								<input type="email" placeholder="Enter email address" class="form-control">
+							</div>
+						</div>
+						<span class="sent">INVITE SENT!</span>
+					</form>
+					<ul class="social-share list-unstyled">
+						<li class="facebook"><a href="#"><span class="icon"><img src="images/ico-facebook.png" alt=""></span>Share on Facebook</a></li>
+						<li class="twitter"><a href="#"><span class="icon"><img src="images/ico-twitter.png" alt=""></span>Share on Twitter</a></li>
+						<li class="google-plus"><a href="#"><span class="icon"><img src="images/ico-google-plus.png" alt=""></span>Share on Google+</a></li>
+						<li class="link"><a href="#"><span class="icon"><img src="images/ico-link.png" alt=""></span><span class="hidden-xs">bookamaid.com/ref/al</span><span class="visible-xs">Copy Link to Clipboard</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- rating popup -->
+		<div class="popup rating" id="rating">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Rate Our Service</h2>
+					<div class="custom-select" id="service-date">
+						<strong class="form-control">Select service date</strong>
+						<ul class="list-unstyled">
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">March 13th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">March 6th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">February 28th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">February 21st, 3:00-4:00pm</time>
+								</a>
+							</li>
+						</ul>
+						<input type="hidden" class="hidden-field" value="3:00-4:00pm">
+					</div>
+					<div class="author-holder">
+						<div class="author unknown">
+							<a href="#">unkown</a>
+						</div>
+						<ul class="star-rating">
+							<li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+							<li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+							<li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+							<li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+							<li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+						</ul>
+					</div>
+					<textarea placeholder="Optional comments about our service" class="form-control disable"></textarea>
+					<span class="submit disable">SUBMIT RATING</span>
+					<button type="submit" class="btn btn-success">SUBMIT RATING</button>
+				</form>
+			</div>
+		</div>
+		<!-- new-booking popup -->
+		<div class="popup booking-popup" id="new-booking">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Book a new Appoinment</h2>
+					<p>Would you like to use your settings from your previous booking?</p>
+					<div class="buttons row">
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>YES</strong>Use previous settings</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>NO</strong>Don’t use previous settings</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- payment popup -->
+		<div class="popup payment-popup" id="payment">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Payment <span>Job # 213765</span></h2>
+					<p>Job # 213765 Balance ($85:00)</p>
+					<h3>Payment Type</h3>
+					<div class="custom-select" id="payment-method">
+						<strong class="form-control">Select Payment Method</strong>
+						<ul class="list-unstyled" role="tablist">
+							<li><a href="#card-options" class="card-opener" role="tab" data-toggle="tab">Credit Card <span>(one time<span class="hidden-xs"> payment</span>)</span></a></li>
+							<li><a href="#amex-options" class="card-opener" role="tab" data-toggle="tab">Credit Card <span class="hidden-xs">(American Express ending in 2509)</span><span class="visible-xs-inline">(AMEX)</span></a></li>
+							<li><a href="#check-options" role="tab" data-toggle="tab">Check</a></li>
+							<li><a href="#cash-options" role="tab" data-toggle="tab">Cash</a></li>
+							<li><a href="#other-options" role="tab" data-toggle="tab">Other</a></li>
+						</ul>
+						<input type="hidden" class="hidden-field">
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane card-options" id="card-options">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="label" for="fname">First Name</label>
+										<input type="tel" class="form-control" id="fname" value="Mark">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="label" for="lname">Last Namer</label>
+										<input type="tel" class="form-control" id="lname" value="Anderson">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="label" for="card-number">Credit Card Number</label>
+										<input type="tel" class="form-control" maxlength="19" id="card-number" value="- - - -  - - - -  - - - -  4556" autocomplete="off">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+									<ul class="cards list-unstyled">
+										<li class="amex">
+											<img src="images/card1.png" alt="AMEX">
+											<img src="images/card1-color.png" alt="AMEX" class="color">
+										</li>
+										<li class="discover">
+											<img src="images/card2.png" alt="discover">
+											<img src="images/card2-color.png" alt="discover" class="color">
+										</li>
+										<li class="visa">
+											<img src="images/card3.png" alt="VISA">
+											<img src="images/card3-color.png" alt="VISA" class="color">
+										</li>
+										<li class="mastercard">
+											<img src="images/card4.png" alt="MASTER">
+											<img src="images/card4-color.png" alt="MASTER" class="color">
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-6 valid">
+									<div class="row">
+										<div class="col-xs-4 month">
+											<div id="month" class="custom-select focus">
+												<label class="label">MM</label>
+												<strong class="form-control">
+													<label class="selected-option">08</label>
+												</strong>
+												<ul class="list-unstyled">
+													<li><a href="javascript:;">01</a></li>
+													<li><a href="javascript:;">02</a></li>
+													<li><a href="javascript:;">03</a></li>
+													<li><a href="javascript:;">04</a></li>
+													<li><a href="javascript:;">05</a></li>
+													<li><a href="javascript:;">06</a></li>
+													<li><a href="javascript:;">07</a></li>
+													<li><a href="javascript:;">08</a></li>
+													<li><a href="javascript:;">09</a></li>
+													<li><a href="javascript:;">10</a></li>
+													<li><a href="javascript:;">11</a></li>
+													<li><a href="javascript:;">12</a></li>
+												</ul>
+												<input type="hidden" class="hidden-field" value="05">
+											</div>
+										</div>
+										<div class="col-xs-4 year">
+											<div id="year" class="custom-select focus">
+												<label class="label">YYYY</label>
+												<strong class="form-control">
+													<label class="selected-option">2018</label>
+												</strong>
+												<ul class="list-unstyled">
+													<li><a href="javascript:;">2015</a></li>
+													<li><a href="javascript:;">2016</a></li>
+													<li><a href="javascript:;">2017</a></li>
+													<li><a href="javascript:;">2018</a></li>
+													<li><a href="javascript:;">2019</a></li>
+													<li><a href="javascript:;">2020</a></li>
+													<li><a href="javascript:;">2021</a></li>
+													<li><a href="javascript:;">2022</a></li>
+													<li><a href="javascript:;">2023</a></li>
+													<li><a href="javascript:;">2024</a></li>
+													<li><a href="javascript:;">2025</a></li>
+												</ul>
+												<input type="hidden" class="hidden-field">
+											</div>
+										</div>
+										<div class="col-xs-4 csc">
+											<div class="form-group">
+												<label class="label" for="csc">CSC</label>
+												<input type="tel" class="form-control" maxlength="4" id="csc">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>Charge Amount</h3>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="amex-options">
+							<h3>Charge Amount</h3>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="check-options">
+							<div class="row">
+								<div class="col-sm-6">
+									<h3>Check Number</h3>
+									<div class="form-group">
+										<input type="tel" class="form-control">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+								<div class="col-sm-5">
+									<h3>Check Amount</h3>
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="cash-options">
+							<h3>Payment Amount</h3>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="other-options">
+							<h3>Description</h3>
+							<div class="form-group">
+								<textarea class="form-control"></textarea>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<button type="submit" class="btn btn-success hidden">Apply Payment</button>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- refund popup -->
+		<div class="popup refund-popup" id="refund">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Issue Refund <span>job # 213765</span></h2>
+					<ul class="list-unstyled">
+						<li>
+							<input type="radio" id="full-refund" name="refund-payment" autocomplete="off" checked>
+							<label for="full-refund">Full Refund ($85:00)</label>
+						</li>
+						<li>
+							<input type="radio" id="partial-refund" name="refund-payment" autocomplete="off">
+							<label for="partial-refund">Partial Refund</label>
+							<div class="form-group price-box">
+								<div class="price-field">
+									<input type="text" class="form-control" value="85:00">
+								</div>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</li>
+					</ul>
+					<ul class="list-unstyled">
+						<li>
+							<input type="radio" id="refund-card" name="refund-method" autocomplete="off" checked>
+							<label for="refund-card">Refund Card used(AMEX ending in 2345)</label>
+						</li>
+						<li>
+							<input type="radio" id="refund-check" name="refund-method" autocomplete="off">
+							<label for="refund-check">Refund by check</label>
+						</li>
+					</ul>
+					<h3>Reason for refund</h3>
+					<div class="form-group">
+						<textarea class="form-control"></textarea>
+						<span class="help-block">this is a mandatory field</span>
+					</div>
+					<div class="footer">
+						<a href="javascript:;" class="btn btn-success">Issue Refund</a>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- refund info popup -->
+		<div class="popup refund-info" id="refund-info">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Refund Info <span>job # 213765</span></h2>
+					<ul class="list-unstyled">
+						<li>Refunded 3/24/15 10:23am By Susan B.</li>
+						<li>Full Refund ($85.00)</li>
+						<li>Refund card used (AMEX ending in 2345)</li>
+						<li><strong>Reason for refund:</strong>Client was accidently double billed </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- reset password popup -->
+		<div class="popup large" id="reset-password">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Reset User Password</h2>
+					<p>An email will be sent to useremail@domain.com with instructions how to reset their password.</p>
+					<div class="footer">
+						<a href="#" class="btn btn-success">Send Email</a>
+						<a href="#" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add location popup -->
+		<div class="popup location-popup" id="add-location">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Add Location</h2>
+					<h3><span>Location Name</span></h3>
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Farm house">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<label class="custom-checkbox" for="make-primary3">
+								<input type="checkbox" id="make-primary3" autocomplete="off">
+								<span class="custom-input"></span>
+								<span>Make Primary Location</span>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10">
+							<h3><span>Street Address</span></h3>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="545 Lexington Avenue, New York, NY, 10023">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<h3 class="small"><span>Apt. #</span></h3>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="J23">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<div class="row rooms">
+						<div class="col-sm-7">
+							<h3><span>Bedrooms</span></h3>
+							<ul class="list-unstyled btn-group item6" id="bedrooms" data-toggle="buttons">
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">0
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">1
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">2
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">3
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">4
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">5+
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-5">
+							<h3><span>Bathrooms</span></h3>
+							<ul class="list-unstyled btn-group" id="bathrooms" data-toggle="buttons">
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">1
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">2
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">3
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">4+
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<a href="#" class="btn btn-success">Save Changes</a>
+						<a href="#" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Edit Credit Card popup -->
+		<div class="popup payment-popup" id="edit-card">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Edit Credit Card</h2>
+					<div class="card-options">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="label" for="fname">First Name</label>
+									<input type="tel" class="form-control" id="fname" value="Mark">
+									<span class="help-block">this is a mandatory field</span>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="label" for="lname">Last Namer</label>
+									<input type="tel" class="form-control" id="lname" value="Anderson">
+									<span class="help-block">this is a mandatory field</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="label" for="card-number2">Credit Card Number</label>
+									<input type="tel" class="form-control" maxlength="19" id="card-number2" value="- - - -  - - - -  - - - -  4556" autocomplete="off">
+									<span class="help-block">this is a mandatory field</span>
+								</div>
+								<ul class="cards list-unstyled">
+									<li class="amex">
+										<img src="images/card1.png" alt="AMEX">
+										<img src="images/card1-color.png" alt="AMEX" class="color">
+									</li>
+									<li class="discover">
+										<img src="images/card2.png" alt="discover">
+										<img src="images/card2-color.png" alt="discover" class="color">
+									</li>
+									<li class="visa">
+										<img src="images/card3.png" alt="VISA">
+										<img src="images/card3-color.png" alt="VISA" class="color">
+									</li>
+									<li class="mastercard">
+										<img src="images/card4.png" alt="MASTER">
+										<img src="images/card4-color.png" alt="MASTER" class="color">
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 valid">
+								<div class="row">
+									<div class="col-xs-4 month">
+										<div id="month2" class="custom-select focus">
+											<label class="label">MM</label>
+											<strong class="form-control">
+												<label class="selected-option">08</label>
+											</strong>
+											<ul class="list-unstyled">
+												<li><a href="javascript:;">01</a></li>
+												<li><a href="javascript:;">02</a></li>
+												<li><a href="javascript:;">03</a></li>
+												<li><a href="javascript:;">04</a></li>
+												<li><a href="javascript:;">05</a></li>
+												<li><a href="javascript:;">06</a></li>
+												<li><a href="javascript:;">07</a></li>
+												<li><a href="javascript:;">08</a></li>
+												<li><a href="javascript:;">09</a></li>
+												<li><a href="javascript:;">10</a></li>
+												<li><a href="javascript:;">11</a></li>
+												<li><a href="javascript:;">12</a></li>
+											</ul>
+											<input type="hidden" class="hidden-field" value="05">
+										</div>
+									</div>
+									<div class="col-xs-4 year">
+										<div id="year2" class="custom-select focus">
+											<label class="label">YYYY</label>
+											<strong class="form-control">
+												<label class="selected-option">2018</label>
+											</strong>
+											<ul class="list-unstyled">
+												<li><a href="javascript:;">2015</a></li>
+												<li><a href="javascript:;">2016</a></li>
+												<li><a href="javascript:;">2017</a></li>
+												<li><a href="javascript:;">2018</a></li>
+												<li><a href="javascript:;">2019</a></li>
+												<li><a href="javascript:;">2020</a></li>
+												<li><a href="javascript:;">2021</a></li>
+												<li><a href="javascript:;">2022</a></li>
+												<li><a href="javascript:;">2023</a></li>
+												<li><a href="javascript:;">2024</a></li>
+												<li><a href="javascript:;">2025</a></li>
+											</ul>
+											<input type="hidden" class="hidden-field">
+										</div>
+									</div>
+									<div class="col-xs-4 csc">
+										<div class="form-group">
+											<label class="label" for="csc">CSC</label>
+											<input type="tel" class="form-control" maxlength="4" id="csc">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<button type="submit" class="btn btn-success">Save Changes</button>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Edit personal information popup -->
+		<div class="popup large popup-pers-info" id="edit-personal-info">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Edit Personal Information</h2>
+					<div class="form-group">
+						<label class="label" for="username">Email (username)</label>
+						<input type="text" class="form-control" id="username" value="john.anderson@companyname.com">
+						<span class="help-block">this is a mandatory field</span>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label class="label" for="cell-phone">Cell Phone</label>
+								<input type="tel" class="form-control" id="cell-phone" value="718-833-7849" maxlength="12">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label class="label" for="alt-phone">Alt. Phone</label>
+								<input type="tel" class="form-control" id="alt-phone" value="917-348-0978" maxlength="12">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<h3><span>Locations</span></h3>
+					<div class="location-holder">
+						<div class="location">
+							<h4>Home:</h4>
+							<div class="row">
+								<div class="col-sm-7">
+									<address>545 Lexington Avenue, <br>New York, NY, 10023  Apt: D2</address>
+								</div>
+								<div class="col-sm-5">
+									<ul class="rooms list-unstyled">
+										<li>3 Bedrooms</li>
+										<li>2 Bathrooms</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="control list-unstyled">
+								<li>
+									<label class="custom-checkbox" for="inactive1">
+										<input type="checkbox" id="inactive1" autocomplete="off">
+										<span class="custom-input"></span>
+										<span>Inactive</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-radio" for="prim-loc1">
+										<input type="radio" id="prim-loc1" name="primary-location" checked>
+										<span class="custom-input"></span>
+										<span>Primary Location</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="location">
+							<h4>Farm House:</h4>
+							<div class="row">
+								<div class="col-sm-7">
+									<address>123 River Road, <br>Pinebush, NY 10023</address>
+								</div>
+								<div class="col-sm-5">
+									<ul class="rooms list-unstyled">
+										<li>6 Bedrooms</li>
+										<li>4 Bathrooms</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="control list-unstyled">
+								<li>
+									<label class="custom-checkbox" for="inactive2">
+										<input type="checkbox" id="inactive2" autocomplete="off">
+										<span class="custom-input"></span>
+										<span>Inactive</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-radio" for="prim-loc2">
+										<input type="radio" id="prim-loc2" name="primary-location">
+										<span class="custom-input"></span>
+										<span>Primary Location</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<button type="submit" class="btn btn-success">Save Changes</button>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/typekit.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="js/ui-calender.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="http://tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/jquery.custom.js"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto!important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+</html>

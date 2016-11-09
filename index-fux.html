@@ -1,0 +1,479 @@
+<!doctype html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>BOOK A MAID</title>
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="css/all.css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body onLoad="pageLoad()">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<!-- main navigation -->
+			<nav id="nav" class="collapse">
+				<div class="container">
+					<ul class="list-inline">
+						<li class="visible-xs-inline-block"><a href="#"><span class="icon-home"></span>HOME</a></li>
+						<li><a href="#"><span class="icon-services"></span>services</a></li>
+						<li><a href="#"><span class="icon-questions"></span>how it works</a></li>
+						<li><a href="faq.html"><span class="icon-qa"></span>f.a.q’s</a></li>
+						<li><a href="#"><span class="icon-contact"></span>contact us</a></li>
+						<li class="author"> <!-- use class "user-active" for vissible SIGN OUT option -->
+							<a href="#login-form" class="login" data-toggle="modal"><span class="icon-login"></span>sign in</a>
+							<a href="#" class="logout"><span class="icon-logout"></span>SIGN OUT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-2 visible-xs">
+						<a href="#nav" class="navbar-toggle" data-toggle="collapse" aria-expanded="false">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="title">MENU</span>
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<!-- page logo -->
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="BOOK A MAID" class="hidden-xs">
+								<img src="images/logo2.png" alt="BOOK A MAID" class="visible-xs">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-2 text-right visible-xs">
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel icon-tel visible-xs-inline-block"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main" role="main" class="container">
+			<!-- Upcoming Appointments -->
+			<section class="upcoming-appointments">
+				<header class="header hidden-xs">
+					<h1>You have Upcoming Appointments:</h1>
+				</header>
+				<div class="empty">
+					<h2>Hello Al, you have no booked appointments</h2>
+					<p>Would you like to <a href="#" class="popup-opener" data-target="#new-booking">book an appoinment now</a>?</p>
+				</div>
+			</section>
+			<!-- Your Appointments -->
+			<section class="your-appointments">
+				<header class="header">
+					<div class="tabs">
+						<ul class="nav nav-tabs hidden-xs" role="tablist">
+							<li class="active"><a href="#upcoming-appointments" role="tab" data-toggle="tab">Upcoming <span class="hidden-md hidden-sm">Appointments</span><span class="visible-md-inline visible-sm-inline">Appts</span></a></li>
+							<li><a href="#past-appointments" role="tab" data-toggle="tab">Past <span class="hidden-md hidden-sm">Appointments</span><span class="visible-md-inline visible-sm-inline">Appts</span></a></li>
+							<li><a href="#calender-tab" role="tab" data-toggle="tab">Calendar</a></li>
+							<li><a href="#billing-history" role="tab" data-toggle="tab">Billing History</a></li>
+						</ul>
+						<div class="custom-select visible-xs" id="your-appointments">
+							<strong class="form-control">Upcoming Appointments</strong>
+							<ul class="list-unstyled" role="tablist">
+								<li class="active"><a href="#upcoming-appointments" role="tab" data-toggle="tab">Upcoming Appointments</a></li>
+								<li><a href="#past-appointments" role="tab" data-toggle="tab">Past Appointments</a></li>
+								<li><a href="javascript:;" class="btn-calender">Calendar</a></li>
+								<li><a href="#billing-history" role="tab" data-toggle="tab">Billing History</a></li>
+							</ul>
+						</div>
+					</div>
+				</header>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="upcoming-appointments">
+						<div class="empty">
+							<h3>You currently have no booked appointments</h3>
+							<p>Once you book appointments, you will be able to view them here.</p>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="past-appointments">
+						<div class="empty">
+							<h3>You currently have no Past appointments</h3>
+							<p>Once you book appointments, you will be able to view them here.</p>
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="calender-tab">
+						<div class="holder">
+							<strong class="heading visible-xs">Calendar View<a href="javascript:;" class="btn-close"></a></strong>
+							<div class="row">
+								<div class="col-lg-8 col-md-7">
+									<!-- appointment calender -->
+									<div class="appointment-calender">
+										<div id="appointment-datepicker" class="show-calender"></div>
+										<ul class="list-unstyled info">
+											<li class="today">Today</li>
+											<li class="booked">Booked</li>
+											<li class="completed">Completed</li>
+											<li class="unavailable">Unavailable</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-5">
+									<!-- appointment dates -->
+									<div class="appoint-dates">
+										<h2>Upcoming Appointments:</h2>
+										<div class="dates">
+											<ul class="list-unstyled">
+												<li><a href="#">Wed. Sept. 30th, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Oct. 7th, <span>10:00-11:00am</span></a></li>
+												<li class="secondary"><a href="#">Sat. Oct. 12th, <span>3:00-4:00pm</span></a></li>
+												<li><a href="#">Wed. Oct. 14th, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Oct. 21st, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Oct. 28th, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Nov. 3rd, <span>10:00-11:00am</span></a></li>
+												<li><a href="#">Wed. Nov. 10th, <span>10:00-11:00am</span></a></li>
+											</ul>
+										</div>
+										<a href="#" class="more">See more appoinments</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- billing history -->
+					<section role="tabpanel" class="tab-pane billing-history" id="billing-history">
+						<header class="header">
+							<strong class="date">Next Billing Date: <time datetime="2015/08/25">12/20/14</time></strong>
+							<div class="forms clearfix">
+								<div class="form">
+									<form action="javascript:;">
+										<input type="search" placeholder="Search location or Job #" class="form-control">
+										<button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
+									</form>
+								</div>
+								<div class="form">
+									<form action="javascript:;">
+										<ul class="list-unstyled">
+											<li>
+												<div class="custom-select" id="start-date">
+													<strong>
+														<input type="text" placeholder="Start Date" class="form-control">
+													</strong>
+													<div class="dropdown-menu">
+														<div class="calender"></div>
+													</div>
+													<input type="hidden" class="hidden-field" value="Start Date">
+												</div>
+											</li>
+											<li>
+												<div class="custom-select" id="end-date">
+													<strong>
+														<input type="text" placeholder="End Date" class="form-control">
+													</strong>
+													<div class="dropdown-menu">
+														<div class="calender"></div>
+													</div>
+													<input type="hidden" class="hidden-field" value="End Date">
+												</div>
+											</li>
+										</ul>
+										<button type="submit" class="btn btn-search"><i class="glyphicon glyphicon-search"></i></button>
+									</form>
+								</div>
+							</div>
+						</header>
+						<table class="table-result">
+							<tr>
+								<th>Date</th>
+								<th>Job #</th>
+								<th>Location</th>
+								<th class="text-right">Amount</th>
+								<th>Status</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">11/20/14</time></td>
+								<td data-title="Job #"><a href="">213765</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Paid-Amex</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-refund green popup-opener" data-target="#refund">Refund</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">10/20/14</time></td>
+								<td data-title="Job #"><a href="">531452</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Paid - MC</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-refund green popup-opener" data-target="#refund">Refund</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">9/20/14</time></td>
+								<td data-title="Job #"><a href="">245731</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Balance Due</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-primary popup-opener" data-target="#refund-info">Refunded</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">9/15/14</time></td>
+								<td data-title="Job #"><a href="">84568</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Paid-Amex</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-refund green popup-opener" data-target="#refund">Refund</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">8/20/14</time></td>
+								<td data-title="Job #"><a href="">469876</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Paid - MC</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-refund green popup-opener" data-target="#refund">Refund</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">7/20/14</time></td>
+								<td data-title="Job #"><a href="">346378</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Balance Due</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-refund green popup-opener" data-target="#refund">Refund</a>
+								</td>
+							</tr>
+							<tr>
+								<td data-title="Date"><time datetime="2015-08-20">6/20/14</time></td>
+								<td data-title="Job #"><a href="">352446</a></td>
+								<td data-title="Location">Primary</td>
+								<td data-title="Amount" class="text-right">$85:00</td>
+								<td data-title="Status">Paid-Amex</td>
+								<td data-title="&nbsp;" class="text-right">
+									<a href="#" class="btn btn-refund green popup-opener" data-target="#refund">Refund</a>
+								</td>
+							</tr>
+						</table>
+					</section>
+				</div>
+			</section>
+		</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<!-- page logo -->
+						<div class="logo"><a href="#"><img src="images/logo2.png" alt="BOOK A MAID"></a></div>
+						<!-- address -->
+						<address>Book a Maid, LLC <br>12345 N. Street Name Rd. <br>City Name,ST 98765</address>
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel">Call Us: 1-866-673-1005</a>
+						<!-- social networks -->
+						<ul class="social-networks list-unstyled">
+							<li class="facebook"><a href="#">facebook</a></li>
+							<li class="twitter"><a href="#">twitter</a></li>
+							<li class="google-plus"><a href="#">google plus</a></li>
+							<li class="linkedin"><a href="#">linkedin</a></li>
+						</ul>
+						<!-- Copyright -->
+						<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+					</div>
+					<!-- footer navigations -->
+					<div class="col-md-9 col-sm-8">
+						<div class="row">
+							<nav class="col-md-3 col-sm-6">
+								<h3>About US</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">The Company</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Vision</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>Areas served</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Manhattan, NY</a></li>
+									<li><a href="#">Brooklyn, NY</a></li>
+									<li><a href="#">Queens, NY</a></li>
+									<li><a href="#">Long Ialand, NY</a></li>
+									<li><a href="#">Staten Island, NY</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>customer service</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Simple Pricing</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">F.A.Q.</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>contact</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Basic info</a></li>
+									<li><a href="#">Map</a></li>
+									<li><a href="#">Contact Form</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container visible-xs">
+				<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+			</div>
+		</footer>
+		<!-- Login form -->
+		<div class="modal login-form" id="login-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong class="heading">Login</strong>
+					</div>
+					<form action="#" class="modal-body">
+						<button type="button" class="btn btn-primary">Login with Facebook</button>
+						<strong class="divider"><span>or</span></strong>
+						<div class="form-group">
+							<label class="label" for="login-email">Email Address</label>
+							<input type="email" id="login-email" class="form-control">
+							<span class="help-block">This is not valid email address</span>
+						</div>
+						<div class="form-group password">
+							<label class="label" for="password">Password</label>
+							<input type="password" id="password" class="form-control">
+							<span class="help-block">This is a mandatory field</span>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-6">
+								<label for="remember-me" class="custom-checkbox">
+									<input type="checkbox" id="remember-me">
+									<span class="custom-input"></span>
+									<span class="custom-label">Remember Me</span>
+								</label>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a href="#" class="forgot">Forgot Password?</a>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-success">LOGIN</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<a href="javascript:;" class="overlay"></a>
+		<!-- new-booking popup -->
+		<div class="popup booking-popup" id="new-booking">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Book a new Appoinment</h2>
+					<p>Would you like to use your settings from your previous booking?</p>
+					<div class="buttons row">
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>YES</strong>Use previous settings</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>NO</strong>Don’t use previous settings</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- refund popup -->
+		<div class="popup refund-popup" id="refund">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Issue Refund <span>job # 213765</span></h2>
+					<ul class="list-unstyled">
+						<li>
+							<input type="radio" id="full-refund" name="refund-payment" autocomplete="off" checked>
+							<label for="full-refund">Full Refund ($85:00)</label>
+						</li>
+						<li>
+							<input type="radio" id="partial-refund" name="refund-payment" autocomplete="off">
+							<label for="partial-refund">Partial Refund</label>
+							<div class="form-group price-box">
+								<div class="price-field">
+									<input type="text" class="form-control" value="85:00">
+								</div>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</li>
+					</ul>
+					<ul class="list-unstyled">
+						<li>
+							<input type="radio" id="refund-card" name="refund-method" autocomplete="off" checked>
+							<label for="refund-card">Refund Card used(AMEX ending in 2345)</label>
+						</li>
+						<li>
+							<input type="radio" id="refund-check" name="refund-method" autocomplete="off">
+							<label for="refund-check">Refund by check</label>
+						</li>
+					</ul>
+					<h3>Reason for refund</h3>
+					<div class="form-group">
+						<textarea class="form-control"></textarea>
+						<span class="help-block">this is a mandatory field</span>
+					</div>
+					<div class="buttons">
+						<a href="javascript:;" class="btn btn-success">Issue Refund</a>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- refund info popup -->
+		<div class="popup refund-info" id="refund-info">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Refund Info <span>job # 213765</span></h2>
+					<ul class="list-unstyled">
+						<li>Refunded 3/24/15 10:23am By Susan B.</li>
+						<li>Full Refund ($85.00)</li>
+						<li>Refund card used (AMEX ending in 2345)</li>
+						<li><strong>Reason for refund:</strong>Client was accidently double billed </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/typekit.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="js/ui-calender.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="http://tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/jquery.custom.js"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto!important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+</html>

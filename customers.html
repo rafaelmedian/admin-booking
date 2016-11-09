@@ -1,0 +1,1291 @@
+<!doctype html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>BOOK A MAID</title>
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="css/all.css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body onLoad="pageLoad()">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<!-- main navigation -->
+			<nav id="nav" class="collapse">
+				<div class="container">
+					<ul class="list-inline">
+						<li class="visible-xs-inline-block"><a href="#"><span class="icon-home"></span>HOME</a></li>
+						<li><a href="#"><span class="icon-services"></span>services</a></li>
+						<li><a href="#"><span class="icon-questions"></span>how it works</a></li>
+						<li><a href="faq.html"><span class="icon-qa"></span>f.a.q’s</a></li>
+						<li><a href="#"><span class="icon-contact"></span>contact us</a></li>
+						<li class="author"> <!-- use class "user-active" for vissible SIGN OUT option -->
+							<a href="#login-form" class="login" data-toggle="modal"><span class="icon-login"></span>sign in</a>
+							<a href="#" class="logout"><span class="icon-logout"></span>SIGN OUT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-2 visible-xs">
+						<a href="#nav" class="navbar-toggle" data-toggle="collapse" aria-expanded="false">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="title">MENU</span>
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<!-- page logo -->
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="BOOK A MAID" class="hidden-xs">
+								<img src="images/logo2.png" alt="BOOK A MAID" class="visible-xs">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-2 text-right visible-xs">
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel icon-tel visible-xs-inline-block"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main" role="main" class="container">
+			<!-- customers -->
+			<section class="customers">
+				<header class="header">
+					<h1>Customers</h1>
+					<div class="row">
+						<div class="col-md-8 col-sm-7">
+							<form action="#" class="customer-form">
+								<button type="submit" class="btn"></button>
+								<div class="text">
+									<input type="search" placeholder="Search for Customer" class="form-control">
+								</div>
+							</form>
+							<a href="javascript:;" class="btn-adv">Advance search</a>
+						</div>
+						<div class="col-md-4 col-sm-5 text-right">
+							<a href="#" class="btn btn-success">Add New Customer</a>
+						</div>
+					</div>
+					<div class="filter">
+						<div class="row">
+							<form action="#" class="col-lg-4 col-sm-6 service">
+								<div class="heading-bar">
+									<label for="service-range" class="custom-checkbox">
+										<input type="checkbox" id="service-range" autocomplete="off">
+										<span class="custom-input"></span>
+										<span>Range</span>
+									</label>
+									<h2><span>Service Date</span></h2>
+								</div>
+								<div class="form-group">
+									<div class="custom-select service-date">
+										<strong>
+											<input type="text" placeholder="Select Date" class="form-control">
+										</strong>
+										<div class="dropdown-menu">
+											<div class="calender"></div>
+										</div>
+									</div>
+								</div>
+								<ul class="list-unstyled">
+									<li>
+										<div class="custom-select service-start-date">
+											<strong>
+												<input type="text" placeholder="Start Date" class="form-control">
+											</strong>
+											<div class="dropdown-menu">
+												<div class="calender"></div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="custom-select service-end-date">
+											<strong>
+												<input type="text" placeholder="End Date" class="form-control">
+											</strong>
+											<div class="dropdown-menu">
+												<div class="calender"></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<button type="submit" class="btn btn-disabled">Search Service Date</button>
+							</form>
+							<form action="#" class="col-lg-4 col-sm-6 account">
+								<div class="heading-bar">
+									<label for="open-range" class="custom-checkbox">
+										<input type="checkbox" id="open-range" autocomplete="off">
+										<span class="custom-input"></span>
+										<span>Range</span>
+									</label>
+									<h2><span>Account Opened</span></h2>
+								</div>
+								<div class="form-group">
+									<div class="custom-select open-date">
+										<strong>
+											<input type="text" placeholder="Select Date" class="form-control">
+										</strong>
+										<div class="dropdown-menu">
+											<div class="calender"></div>
+										</div>
+									</div>
+								</div>
+								<ul class="list-unstyled">
+									<li>
+										<div class="custom-select open-start-date">
+											<strong>
+												<input type="text" placeholder="Start Date" class="form-control">
+											</strong>
+											<div class="dropdown-menu">
+												<div class="calender"></div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="custom-select open-end-date">
+											<strong>
+												<input type="text" placeholder="End Date" class="form-control">
+											</strong>
+											<div class="dropdown-menu">
+												<div class="calender"></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<button type="submit" class="btn btn-disabled">Search Opened Date</button>
+							</form>
+							<form action="#" class="col-lg-4 col-sm-6">
+								<div class="heading-bar">
+									<h2><span>Order Number</span></h2>
+								</div>
+								<div class="form-group">
+									<input type="text" placeholder="Enter Order Number" class="form-control">
+								</div>
+								<button type="submit" class="btn btn-disabled">Search Order Number</button>
+							</form>
+							<div class="col-lg-4 col-sm-6">
+								<div class="custom-select sort-by" id="sort-by">
+									<strong class="form-control">Last Name</strong>
+									<span class="title">sort by</span>
+									<ul class="list-unstyled">
+										<li><a href="javascript:;">First Name</a></li>
+										<li><a href="javascript:;">Last Name</a></li>
+										<li><a href="javascript:;">Date</a></li>
+										<li><a href="javascript:;">Customer ID</a></li>
+										<li><a href="javascript:;">Booking Date</a></li>
+										<li><a href="javascript:;">Upcoming Booking</a></li>
+									</ul>
+									<input type="hidden" class="hidden-field" value="Last Name">
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div class="posts">
+					<article class="post">
+						<div class="title-box">
+							<h2>Jason Anderson</h2>
+							<address>545 Lexington Avenue. Apt D12 <br>New York. NY. 10023</address>
+						</div>
+						<div class="contact-info">
+							<strong class="id">Cust ID: <span>n12384</span></strong>
+							<time datetime="2015/08/28">12/13/10</time>
+							<ul class="tel list-unstyled">
+								<li><a href="tel:7188367849">718 836 7849</a></li>
+								<li><a href="tel:9173480978">917 348 0978</a></li>
+							</ul>
+							<a href="mailto:&#106;&#097;&#110;&#100;&#101;&#114;&#115;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="email">&#106;&#097;&#110;&#100;&#101;&#114;&#115;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+						</div>
+						<div class="account">
+							<strong class="balance nill">Balance: <span>$00.00</span></strong>
+							<a href="" class="btn-book">Book Appointment</a>
+						</div>
+						<div class="booking">
+							<h3>Bookings</h3>
+							<ul class="list-unstyled">
+								<li>past: <span>12</span></li>
+								<li>Upcoming: <span>4</span></li>
+								<li>Next: <time datetime="2015-08-28">5/13/15 /10:00-11:00am</time></li>
+							</ul>
+						</div>
+					</article>
+					<article class="post">
+						<div class="title-box">
+							<h2>Susan Miller</h2>
+							<address>123 Hedgehog Road <br>New York. NY. 11223</address>
+						</div>
+						<div class="contact-info">
+							<strong class="id">Cust ID: <span>n34248</span></strong>
+							<time datetime="2015/08/28">08/13/14</time>
+							<ul class="tel list-unstyled">
+								<li><a href="tel:7182376778">718 237 6778</a></li>
+							</ul>
+							<a href="mailto:&#115;&#109;&#105;&#108;&#108;&#101;&#114;&#050;&#050;&#050;&#064;&#103;&#109;&#097;&#108;&#108;&#046;&#099;&#111;&#109;" class="email">&#115;&#109;&#105;&#108;&#108;&#101;&#114;&#050;&#050;&#050;&#064;&#103;&#109;&#097;&#108;&#108;&#046;&#099;&#111;&#109;</a>
+						</div>
+						<div class="account">
+							<strong class="balance nill">Balance: <span>$00.00</span></strong>
+							<a href="" class="btn-book">Book Appointment</a>
+						</div>
+						<div class="booking">
+							<h3>Bookings</h3>
+							<ul class="list-unstyled">
+								<li>past: <span>2</span></li>
+								<li>Upcoming: <span>0</span></li>
+								<li>Next: <time datetime="2015-08-28"></time></li>
+							</ul>
+						</div>
+					</article>
+					<article class="post">
+						<div class="title-box">
+							<h2>Alexander Hamilton</h2>
+							<address>678 Richardson Blvd. <br>Marlboro, NJ. 11223</address>
+						</div>
+						<div class="contact-info">
+							<strong class="id">Cust ID: <span>n34248</span></strong>
+							<time datetime="2015/08/28">12/13/10</time>
+							<ul class="tel list-unstyled">
+								<li><a href="tel:7182376778">718 237 6778</a></li>
+							</ul>
+							<a href="mailto:&#115;&#109;&#105;&#108;&#108;&#101;&#114;&#050;&#050;&#050;&#064;&#103;&#109;&#097;&#108;&#108;&#046;&#099;&#111;&#109;" class="email">&#115;&#109;&#105;&#108;&#108;&#101;&#114;&#050;&#050;&#050;&#064;&#103;&#109;&#097;&#108;&#108;&#046;&#099;&#111;&#109;</a>
+						</div>
+						<div class="account">
+							<strong class="balance">Balance: <span>$120.00</span></strong>
+							<a href="" class="btn-book">Book Appointment</a>
+						</div>
+						<div class="booking">
+							<h3>Bookings</h3>
+							<ul class="list-unstyled">
+								<li>past: <span>132</span></li>
+								<li>Upcoming: <span>4</span></li>
+								<li>Next: <time datetime="2015-08-28">4/01/15 /1:00-2:00am</time></li>
+							</ul>
+						</div>
+					</article>
+					<article class="post">
+						<div class="title-box">
+							<h2>Susan Miller</h2>
+							<address>123 Hedgehog Road <br>New York. NY. 11223</address>
+						</div>
+						<div class="contact-info">
+							<strong class="id">Cust ID: <span>n34248</span></strong>
+							<time datetime="2015/08/28">08/13/14</time>
+							<ul class="tel list-unstyled">
+								<li><a href="tel:7182376778">718 237 6778</a></li>
+							</ul>
+							<a href="mailto:&#115;&#109;&#105;&#108;&#108;&#101;&#114;&#050;&#050;&#050;&#064;&#103;&#109;&#097;&#108;&#108;&#046;&#099;&#111;&#109;" class="email">&#115;&#109;&#105;&#108;&#108;&#101;&#114;&#050;&#050;&#050;&#064;&#103;&#109;&#097;&#108;&#108;&#046;&#099;&#111;&#109;</a>
+						</div>
+						<div class="account">
+							<strong class="balance nill">Balance: <span>$00.00</span></strong>
+							<a href="" class="btn-book">Book Appointment</a>
+						</div>
+						<div class="booking">
+							<h3>Bookings</h3>
+							<ul class="list-unstyled">
+								<li>past: <span>2</span></li>
+								<li>Upcoming: <span>0</span></li>
+								<li>Next: <time datetime="2015-08-28"></time></li>
+							</ul>
+						</div>
+					</article>
+					<article class="post">
+						<div class="title-box">
+							<h2>Jason Anderson</h2>
+							<address>545 Lexington Avenue. Apt D12 <br>New York. NY. 10023</address>
+						</div>
+						<div class="contact-info">
+							<strong class="id">Cust ID: <span>n12384</span></strong>
+							<time datetime="2015/08/28">12/13/10</time>
+							<ul class="tel list-unstyled">
+								<li><a href="tel:7188367849">718 836 7849</a></li>
+								<li><a href="tel:9173480978">917 348 0978</a></li>
+							</ul>
+							<a href="mailto:&#106;&#097;&#110;&#100;&#101;&#114;&#115;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;" class="email">&#106;&#097;&#110;&#100;&#101;&#114;&#115;&#111;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
+						</div>
+						<div class="account">
+							<strong class="balance nill">Balance: <span>$00.00</span></strong>
+							<a href="" class="btn-book">Book Appointment</a>
+						</div>
+						<div class="booking">
+							<h3>Bookings</h3>
+							<ul class="list-unstyled">
+								<li>past: <span>12</span></li>
+								<li>Upcoming: <span>4</span></li>
+								<li>Next: <time datetime="2015-08-28">5/13/15 /10:00-11:00am</time></li>
+							</ul>
+						</div>
+					</article>
+				</div>
+				<div class="pager-bar">
+					<div class="custom-select sort-by" id="item-per-page">
+						<strong class="form-control">5 Per page</strong>
+						<span class="title">show</span>
+						<ul class="list-unstyled">
+							<li><a href="javascript:;">5 Per page</a></li>
+							<li><a href="javascript:;">10 Per page</a></li>
+							<li><a href="javascript:;">15 Per page</a></li>
+							<li><a href="javascript:;">20 Per page</a></li>
+						</ul>
+						<input type="hidden" class="hidden-field" value="5 Per page">
+					</div>
+					<ul class="list-unstyled pages">
+						<li><a href=""><span class="arrow left"></span></a></li>
+						<li><a href="">1</a></li>
+						<li><a href="">2</a></li>
+						<li><a href="">3</a></li>
+						<li><a href="">4</a></li>
+						<li><a href="">5</a></li>
+						<li><a href=""><span class="arrow right"></span></a></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<!-- page logo -->
+						<div class="logo"><a href="#"><img src="images/logo2.png" alt="BOOK A MAID"></a></div>
+						<!-- address -->
+						<address>Book a Maid, LLC <br>12345 N. Street Name Rd. <br>City Name,ST 98765</address>
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel">Call Us: 1-866-673-1005</a>
+						<!-- social networks -->
+						<ul class="social-networks list-unstyled">
+							<li class="facebook"><a href="#">facebook</a></li>
+							<li class="twitter"><a href="#">twitter</a></li>
+							<li class="google-plus"><a href="#">google plus</a></li>
+							<li class="linkedin"><a href="#">linkedin</a></li>
+						</ul>
+						<!-- Copyright -->
+						<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+					</div>
+					<!-- footer navigations -->
+					<div class="col-md-9 col-sm-8">
+						<div class="row">
+							<nav class="col-md-3 col-sm-6">
+								<h3>About US</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">The Company</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Vision</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>Areas served</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Manhattan, NY</a></li>
+									<li><a href="#">Brooklyn, NY</a></li>
+									<li><a href="#">Queens, NY</a></li>
+									<li><a href="#">Long Ialand, NY</a></li>
+									<li><a href="#">Staten Island, NY</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>customer service</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Simple Pricing</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">F.A.Q.</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>contact</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Basic info</a></li>
+									<li><a href="#">Map</a></li>
+									<li><a href="#">Contact Form</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container visible-xs">
+				<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+			</div>
+		</footer>
+		<!-- Login form -->
+		<div class="modal login-form" id="login-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong class="heading">Login</strong>
+					</div>
+					<form action="#" class="modal-body">
+						<button type="button" class="btn btn-primary">Login with Facebook</button>
+						<strong class="divider"><span>or</span></strong>
+						<div class="form-group">
+							<label class="label" for="login-email">Email Address</label>
+							<input type="email" id="login-email" class="form-control">
+							<span class="help-block">This is not valid email address</span>
+						</div>
+						<div class="form-group password">
+							<label class="label" for="password">Password</label>
+							<input type="password" id="password" class="form-control">
+							<span class="help-block">This is a mandatory field</span>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-6">
+								<label for="remember-me" class="custom-checkbox">
+									<input type="checkbox" id="remember-me">
+									<span class="custom-input"></span>
+									<span class="custom-label">Remember Me</span>
+								</label>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a href="#" class="forgot">Forgot Password?</a>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-success">LOGIN</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<a href="javascript:;" class="overlay"></a>
+		<!-- reschedule popup -->
+		<div class="popup reschedule" id="reschedule">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<div class="step1">
+						<h2><i class="icon-warning"></i>Warning</h2>
+						<p>Cancellations within 48 hours of an appoinment will result in a $40.00 cancellation fee. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<div class="text-center">
+							<a href="javascript:;" class="btn btn-success popup-close">DON’T RESCHEDULE</a>
+							<a href="javascript:;" class="btn-normal continue">Continue Reschedule</a>
+						</div>
+					</div>
+					<form action="#" class="step2">
+						<h2>Reschedule booking</h2>
+						<div class="form-group date-holder">
+							<i class="icon-calender"></i>
+							<input type="text" id="reschedule-date" class="form-control" value="March 18th, 2015" onFocus="blur();">
+						</div>
+						<div class="custom-select" id="time">
+							<strong class="form-control">3:00-4:00pm</strong>
+							<ul class="list-unstyled">
+								<li><a href="javascript:;">8:00-9:00am</a></li>
+								<li><a href="javascript:;">10:00-11:00am</a></li>
+								<li><a href="javascript:;">11:00-11:50am</a></li>
+								<li><a href="javascript:;">12:00-1:00pm</a></li>
+								<li><a href="javascript:;">12:00-1:00pm</a></li>
+								<li><a href="javascript:;">1:00-2:00pm</a></li>
+								<li><a href="javascript:;">2:00-3:00pm</a></li>
+								<li><a href="javascript:;">3:00-4:00pm</a></li>
+								<li><a href="javascript:;">4:00-5:00pm</a></li>
+							</ul>
+							<input type="hidden" class="hidden-field" value="3:00-4:00pm">
+						</div>
+						<label for="reschedule-all" class="custom-checkbox">
+							<input type="checkbox" id="reschedule-all">
+							<span class="custom-input"></span>
+							<span>Reschedule all subsequent bookings</span>
+						</label>
+						<div class="text-center">
+							<a href="#" class="btn btn-success">Reschedule Booking</a>
+							<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- reschedule popup -->
+		<div class="popup schedule-cancel" id="schedule-cancel">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Cancel booking</h2>
+					<p>Are you sure you want to cancel?</p>
+					<ul class="list-unstyled">
+						<li>
+							<label for="moving-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="moving-reason">
+								<span class="custom-input"></span>
+								<span>Moving</span>
+							</label>
+						</li>
+						<li>
+							<label for="unsatisfied-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="unsatisfied-reason">
+								<span class="custom-input"></span>
+								<span>Unsatisfied</span>
+							</label>
+						</li>
+						<li>
+							<label for="expensive-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="expensive-reason">
+								<span class="custom-input"></span>
+								<span>Too expensive</span>
+							</label>
+						</li>
+						<li>
+							<label for="other-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="other-reason">
+								<span class="custom-input"></span>
+								<span>Other</span>
+							</label>
+						</li>
+						<li class="note-box">
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Other reason (optional)"></textarea>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</li>
+					</ul>
+					<label for="cancel-all" class="custom-checkbox cancel-all">
+						<input type="checkbox" id="cancel-all">
+						<span class="custom-input"></span>
+						<span>Cancel all future bookings</span>
+					</label>
+					<div class="text-center">
+						<a href="#" class="btn btn-success">Cancel Booking</a>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- invitation popup -->
+		<div class="popup invitation" id="invitation">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Earn free cleanings</h2>
+					<h3>Refer your friends!</h3>
+					<p>You will receive $50.00 off your next booking for each friend that completes a booking!</p>
+					<form action="javascript:;">
+						<div class="form-holder">
+							<button type="submit" class="btn btn-success">SEND</button>
+							<div class="text">
+								<input type="email" placeholder="Enter email address" class="form-control">
+							</div>
+						</div>
+						<span class="sent">INVITE SENT!</span>
+					</form>
+					<ul class="social-share list-unstyled">
+						<li class="facebook"><a href="#"><span class="icon"><img src="images/ico-facebook.png" alt=""></span>Share on Facebook</a></li>
+						<li class="twitter"><a href="#"><span class="icon"><img src="images/ico-twitter.png" alt=""></span>Share on Twitter</a></li>
+						<li class="google-plus"><a href="#"><span class="icon"><img src="images/ico-google-plus.png" alt=""></span>Share on Google+</a></li>
+						<li class="link"><a href="#"><span class="icon"><img src="images/ico-link.png" alt=""></span><span class="hidden-xs">bookamaid.com/ref/al</span><span class="visible-xs">Copy Link to Clipboard</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- rating popup -->
+		<div class="popup rating" id="rating">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Rate Our Service</h2>
+					<div class="custom-select" id="service-date">
+						<strong class="form-control">Select service date</strong>
+						<ul class="list-unstyled">
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">March 13th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">March 6th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">February 28th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">February 21st, 3:00-4:00pm</time>
+								</a>
+							</li>
+						</ul>
+						<input type="hidden" class="hidden-field" value="3:00-4:00pm">
+					</div>
+					<div class="author-holder">
+						<div class="author unknown">
+							<a href="#">unkown</a>
+						</div>
+						<ul class="star-rating">
+							<li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+							<li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+							<li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+							<li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+							<li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+						</ul>
+					</div>
+					<textarea placeholder="Optional comments about our service" class="form-control disable"></textarea>
+					<span class="submit disable">SUBMIT RATING</span>
+					<button type="submit" class="btn btn-success">SUBMIT RATING</button>
+				</form>
+			</div>
+		</div>
+		<!-- new-booking popup -->
+		<div class="popup booking-popup" id="new-booking">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Book a new Appoinment</h2>
+					<p>Would you like to use your settings from your previous booking?</p>
+					<div class="buttons row">
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>YES</strong>Use previous settings</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>NO</strong>Don’t use previous settings</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- payment popup -->
+		<div class="popup payment-popup" id="payment">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Payment <span>Job # 213765</span></h2>
+					<p>Job # 213765 Balance ($85:00)</p>
+					<h3>Payment Type</h3>
+					<div class="custom-select" id="payment-method">
+						<strong class="form-control">Select Payment Method</strong>
+						<ul class="list-unstyled" role="tablist">
+							<li><a href="#card-options" class="card-opener" role="tab" data-toggle="tab">Credit Card <span>(one time payment)</span></a></li>
+							<li><a href="#amex-options" class="card-opener" role="tab" data-toggle="tab">Credit Card <span>(American Express ending in 2509)</span></a></li>
+							<li><a href="#check-options" role="tab" data-toggle="tab">Check</a></li>
+							<li><a href="#cash-options" role="tab" data-toggle="tab">Cash</a></li>
+							<li><a href="#other-options" role="tab" data-toggle="tab">Other</a></li>
+						</ul>
+						<input type="hidden" class="hidden-field">
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane card-options" id="card-options">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="label" for="fname">First Name</label>
+										<input type="tel" class="form-control" id="fname" value="Mark">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="label" for="lname">Last Namer</label>
+										<input type="tel" class="form-control" id="lname" value="Anderson">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label class="label" for="card-number">Credit Card Number</label>
+										<input type="tel" class="form-control" maxlength="19" id="card-number" value="- - - -  - - - -  - - - -  4556" autocomplete="off">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+									<ul class="cards list-unstyled">
+										<li class="amex">
+											<img src="images/card1.png" alt="AMEX">
+											<img src="images/card1-color.png" alt="AMEX" class="color">
+										</li>
+										<li class="discover">
+											<img src="images/card2.png" alt="discover">
+											<img src="images/card2-color.png" alt="discover" class="color">
+										</li>
+										<li class="visa">
+											<img src="images/card3.png" alt="VISA">
+											<img src="images/card3-color.png" alt="VISA" class="color">
+										</li>
+										<li class="mastercard">
+											<img src="images/card4.png" alt="MASTER">
+											<img src="images/card4-color.png" alt="MASTER" class="color">
+										</li>
+									</ul>
+								</div>
+								<div class="col-sm-6 valid">
+									<div class="row">
+										<div class="col-xs-4 month">
+											<div id="month" class="custom-select focus">
+												<label class="label">MM</label>
+												<strong class="form-control">
+													<label class="selected-option">08</label>
+												</strong>
+												<ul class="list-unstyled">
+													<li><a href="javascript:;">01</a></li>
+													<li><a href="javascript:;">02</a></li>
+													<li><a href="javascript:;">03</a></li>
+													<li><a href="javascript:;">04</a></li>
+													<li><a href="javascript:;">05</a></li>
+													<li><a href="javascript:;">06</a></li>
+													<li><a href="javascript:;">07</a></li>
+													<li><a href="javascript:;">08</a></li>
+													<li><a href="javascript:;">09</a></li>
+													<li><a href="javascript:;">10</a></li>
+													<li><a href="javascript:;">11</a></li>
+													<li><a href="javascript:;">12</a></li>
+												</ul>
+												<input type="hidden" class="hidden-field" value="05">
+											</div>
+										</div>
+										<div class="col-xs-4 year">
+											<div id="year" class="custom-select focus">
+												<label class="label">YYYY</label>
+												<strong class="form-control">
+													<label class="selected-option">2018</label>
+												</strong>
+												<ul class="list-unstyled">
+													<li><a href="javascript:;">2015</a></li>
+													<li><a href="javascript:;">2016</a></li>
+													<li><a href="javascript:;">2017</a></li>
+													<li><a href="javascript:;">2018</a></li>
+													<li><a href="javascript:;">2019</a></li>
+													<li><a href="javascript:;">2020</a></li>
+													<li><a href="javascript:;">2021</a></li>
+													<li><a href="javascript:;">2022</a></li>
+													<li><a href="javascript:;">2023</a></li>
+													<li><a href="javascript:;">2024</a></li>
+													<li><a href="javascript:;">2025</a></li>
+												</ul>
+												<input type="hidden" class="hidden-field">
+											</div>
+										</div>
+										<div class="col-xs-4 csc">
+											<div class="form-group">
+												<label class="label" for="csc">CSC</label>
+												<input type="tel" class="form-control" maxlength="4" id="csc">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<h3>Charge Amount</h3>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="amex-options">
+							<h3>Charge Amount</h3>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="check-options">
+							<div class="row">
+								<div class="col-sm-6">
+									<h3>Check Number</h3>
+									<div class="form-group">
+										<input type="tel" class="form-control">
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+								<div class="col-sm-5">
+									<h3>Check Amount</h3>
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="cash-options">
+							<h3>Payment Amount</h3>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="price-field">
+											<input type="tel" class="form-control" value="85.00">
+										</div>
+										<span class="help-block">this is a mandatory field</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="other-options">
+							<h3>Description</h3>
+							<div class="form-group">
+								<textarea class="form-control"></textarea>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<button type="submit" class="btn btn-success hidden">Apply Payment</button>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- refund popup -->
+		<div class="popup refund-popup" id="refund">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Issue Refund <span>job # 213765</span></h2>
+					<ul class="list-unstyled">
+						<li>
+							<input type="radio" id="full-refund" name="refund-payment" autocomplete="off" checked>
+							<label for="full-refund">Full Refund ($85:00)</label>
+						</li>
+						<li>
+							<input type="radio" id="partial-refund" name="refund-payment" autocomplete="off">
+							<label for="partial-refund">Partial Refund</label>
+							<div class="form-group price-box">
+								<div class="price-field">
+									<input type="text" class="form-control" value="85:00">
+								</div>
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</li>
+					</ul>
+					<ul class="list-unstyled">
+						<li>
+							<input type="radio" id="refund-card" name="refund-method" autocomplete="off" checked>
+							<label for="refund-card">Refund Card used(AMEX ending in 2345)</label>
+						</li>
+						<li>
+							<input type="radio" id="refund-check" name="refund-method" autocomplete="off">
+							<label for="refund-check">Refund by check</label>
+						</li>
+					</ul>
+					<h3>Reason for refund</h3>
+					<div class="form-group">
+						<textarea class="form-control"></textarea>
+						<span class="help-block">this is a mandatory field</span>
+					</div>
+					<div class="footer">
+						<a href="javascript:;" class="btn btn-success">Issue Refund</a>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- refund info popup -->
+		<div class="popup refund-info" id="refund-info">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Refund Info <span>job # 213765</span></h2>
+					<ul class="list-unstyled">
+						<li>Refunded 3/24/15 10:23am By Susan B.</li>
+						<li>Full Refund ($85.00)</li>
+						<li>Refund card used (AMEX ending in 2345)</li>
+						<li><strong>Reason for refund:</strong>Client was accidently double billed </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- reset password popup -->
+		<div class="popup large" id="reset-password">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Reset User Password</h2>
+					<p>An email will be sent to useremail@domain.com with instructions how to reset their password.</p>
+					<div class="footer">
+						<a href="#" class="btn btn-success">Send Email</a>
+						<a href="#" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add location popup -->
+		<div class="popup location-popup" id="add-location">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Add Location</h2>
+					<h3><span>Location Name</span></h3>
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Farm house">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<label class="custom-checkbox" for="make-primary3">
+								<input type="checkbox" id="make-primary3" autocomplete="off">
+								<span class="custom-input"></span>
+								<span>Make Primary Location</span>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10">
+							<h3><span>Street Address</span></h3>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="545 Lexington Avenue, New York, NY, 10023">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<h3 class="small"><span>Apt. #</span></h3>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="J23">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<div class="row rooms">
+						<div class="col-sm-7">
+							<h3><span>Bedrooms</span></h3>
+							<ul class="list-unstyled btn-group item6" id="bedrooms" data-toggle="buttons">
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">0
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">1
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">2
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">3
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">4
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">5+
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-5">
+							<h3><span>Bathrooms</span></h3>
+							<ul class="list-unstyled btn-group" id="bathrooms" data-toggle="buttons">
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">1
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">2
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">3
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">4+
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<a href="#" class="btn btn-success">Save Changes</a>
+						<a href="#" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Edit Credit Card popup -->
+		<div class="popup payment-popup" id="edit-card">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Edit Credit Card</h2>
+					<div class="card-options">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="label" for="fname">First Name</label>
+									<input type="tel" class="form-control" id="fname" value="Mark">
+									<span class="help-block">this is a mandatory field</span>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="label" for="lname">Last Namer</label>
+									<input type="tel" class="form-control" id="lname" value="Anderson">
+									<span class="help-block">this is a mandatory field</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+									<label class="label" for="card-number2">Credit Card Number</label>
+									<input type="tel" class="form-control" maxlength="19" id="card-number2" value="- - - -  - - - -  - - - -  4556" autocomplete="off">
+									<span class="help-block">this is a mandatory field</span>
+								</div>
+								<ul class="cards list-unstyled">
+									<li class="amex">
+										<img src="images/card1.png" alt="AMEX">
+										<img src="images/card1-color.png" alt="AMEX" class="color">
+									</li>
+									<li class="discover">
+										<img src="images/card2.png" alt="discover">
+										<img src="images/card2-color.png" alt="discover" class="color">
+									</li>
+									<li class="visa">
+										<img src="images/card3.png" alt="VISA">
+										<img src="images/card3-color.png" alt="VISA" class="color">
+									</li>
+									<li class="mastercard">
+										<img src="images/card4.png" alt="MASTER">
+										<img src="images/card4-color.png" alt="MASTER" class="color">
+									</li>
+								</ul>
+							</div>
+							<div class="col-sm-6 valid">
+								<div class="row">
+									<div class="col-xs-4 month">
+										<div id="month2" class="custom-select focus">
+											<label class="label">MM</label>
+											<strong class="form-control">
+												<label class="selected-option">08</label>
+											</strong>
+											<ul class="list-unstyled">
+												<li><a href="javascript:;">01</a></li>
+												<li><a href="javascript:;">02</a></li>
+												<li><a href="javascript:;">03</a></li>
+												<li><a href="javascript:;">04</a></li>
+												<li><a href="javascript:;">05</a></li>
+												<li><a href="javascript:;">06</a></li>
+												<li><a href="javascript:;">07</a></li>
+												<li><a href="javascript:;">08</a></li>
+												<li><a href="javascript:;">09</a></li>
+												<li><a href="javascript:;">10</a></li>
+												<li><a href="javascript:;">11</a></li>
+												<li><a href="javascript:;">12</a></li>
+											</ul>
+											<input type="hidden" class="hidden-field" value="05">
+										</div>
+									</div>
+									<div class="col-xs-4 year">
+										<div id="year2" class="custom-select focus">
+											<label class="label">YYYY</label>
+											<strong class="form-control">
+												<label class="selected-option">2018</label>
+											</strong>
+											<ul class="list-unstyled">
+												<li><a href="javascript:;">2015</a></li>
+												<li><a href="javascript:;">2016</a></li>
+												<li><a href="javascript:;">2017</a></li>
+												<li><a href="javascript:;">2018</a></li>
+												<li><a href="javascript:;">2019</a></li>
+												<li><a href="javascript:;">2020</a></li>
+												<li><a href="javascript:;">2021</a></li>
+												<li><a href="javascript:;">2022</a></li>
+												<li><a href="javascript:;">2023</a></li>
+												<li><a href="javascript:;">2024</a></li>
+												<li><a href="javascript:;">2025</a></li>
+											</ul>
+											<input type="hidden" class="hidden-field">
+										</div>
+									</div>
+									<div class="col-xs-4 csc">
+										<div class="form-group">
+											<label class="label" for="csc">CSC</label>
+											<input type="tel" class="form-control" maxlength="4" id="csc">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<button type="submit" class="btn btn-success">Save Changes</button>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- Edit personal information popup -->
+		<div class="popup large popup-pers-info" id="edit-personal-info">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Edit Personal Information</h2>
+					<div class="form-group">
+						<label class="label" for="username">Email (username)</label>
+						<input type="text" class="form-control" id="username" value="john.anderson@companyname.com">
+						<span class="help-block">this is a mandatory field</span>
+					</div>
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label class="label" for="cell-phone">Cell Phone</label>
+								<input type="tel" class="form-control" id="cell-phone" value="718-833-7849" maxlength="12">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="form-group">
+								<label class="label" for="alt-phone">Alt. Phone</label>
+								<input type="tel" class="form-control" id="alt-phone" value="917-348-0978" maxlength="12">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<h3><span>Locations</span></h3>
+					<div class="location-holder">
+						<div class="location">
+							<h4>Home:</h4>
+							<div class="row">
+								<div class="col-sm-7">
+									<address>545 Lexington Avenue, <br>New York, NY, 10023  Apt: D2</address>
+								</div>
+								<div class="col-sm-5">
+									<ul class="rooms list-unstyled">
+										<li>3 Bedrooms</li>
+										<li>2 Bathrooms</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="control list-unstyled">
+								<li>
+									<label class="custom-checkbox" for="inactive1">
+										<input type="checkbox" id="inactive1" autocomplete="off">
+										<span class="custom-input"></span>
+										<span>Inactive</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-radio" for="prim-loc1">
+										<input type="radio" id="prim-loc1" name="primary-location" checked>
+										<span class="custom-input"></span>
+										<span>Primary Location</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="location">
+							<h4>Farm House:</h4>
+							<div class="row">
+								<div class="col-sm-7">
+									<address>123 River Road, <br>Pinebush, NY 10023</address>
+								</div>
+								<div class="col-sm-5">
+									<ul class="rooms list-unstyled">
+										<li>6 Bedrooms</li>
+										<li>4 Bathrooms</li>
+									</ul>
+								</div>
+							</div>
+							<ul class="control list-unstyled">
+								<li>
+									<label class="custom-checkbox" for="inactive2">
+										<input type="checkbox" id="inactive2" autocomplete="off">
+										<span class="custom-input"></span>
+										<span>Inactive</span>
+									</label>
+								</li>
+								<li>
+									<label class="custom-radio" for="prim-loc2">
+										<input type="radio" id="prim-loc2" name="primary-location">
+										<span class="custom-input"></span>
+										<span>Primary Location</span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer">
+						<button type="submit" class="btn btn-success">Save Changes</button>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/typekit.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="js/ui-calender.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="http://tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/jquery.custom.js"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto!important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+</html>

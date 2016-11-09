@@ -1,0 +1,1077 @@
+<!doctype html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>BOOK A MAID</title>
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="css/all.css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body onLoad="pageLoad()">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<!-- main navigation -->
+			<nav id="nav" class="collapse">
+				<div class="container">
+					<ul class="list-inline">
+						<li class="visible-xs-inline-block"><a href="#"><span class="icon-home"></span>HOME</a></li>
+						<li><a href="#"><span class="icon-services"></span>services</a></li>
+						<li><a href="#"><span class="icon-questions"></span>how it works</a></li>
+						<li><a href="faq.html"><span class="icon-qa"></span>f.a.q’s</a></li>
+						<li><a href="#"><span class="icon-contact"></span>contact us</a></li>
+						<li class="author"> <!-- use class "user-active" for vissible SIGN OUT option -->
+							<a href="#login-form" class="login" data-toggle="modal"><span class="icon-login"></span>sign in</a>
+							<a href="#" class="logout"><span class="icon-logout"></span>SIGN OUT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-2 visible-xs">
+						<a href="#nav" class="navbar-toggle" data-toggle="collapse" aria-expanded="false">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="title">MENU</span>
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<!-- page logo -->
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="BOOK A MAID" class="hidden-xs">
+								<img src="images/logo2.png" alt="BOOK A MAID" class="visible-xs">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-2 text-right visible-xs">
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel icon-tel visible-xs-inline-block"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main" role="main" class="container">
+			<!-- bool new  Appointment -->
+			<div class="book-new">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="block">
+							<h1><span>Book a </span>New Appointment</h1>
+							<div class="rooms">
+								<div class="row">
+									<div class="col-md-7">
+										<h2><span>Bedrooms</span></h2>
+										<ul class="list-unstyled btn-group item6" id="bedrooms" data-toggle="buttons">
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bedrooms" autocomplete="off">0
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bedrooms" autocomplete="off">1
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bedrooms" autocomplete="off">2
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bedrooms" autocomplete="off">3
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bedrooms" autocomplete="off">4
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bedrooms" autocomplete="off">5+
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-5">
+										<h2><span>Bathrooms</span></h2>
+										<ul class="list-unstyled btn-group" id="bathrooms" data-toggle="buttons">
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bathrooms" autocomplete="off">1
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bathrooms" autocomplete="off">2
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bathrooms" autocomplete="off">3
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="bathrooms" autocomplete="off">4+
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div role="tabpanel">
+								<div class="tab-holder">
+									<h2><span>Cleaning</span></h2>
+									<ul class="nav nav-tabs clearfix" role="tablist">
+										<li><a href="#Standard" role="tab" data-toggle="tab">Standard</a></li>
+										<li><a href="#deep" role="tab" data-toggle="tab">Deep</a></li>
+										<li><a href="#move" role="tab" data-toggle="tab">Move In<span class="hidden-xs">/out</span></a></li>
+									</ul>
+								</div>
+								<div class="tab-content" id="cleaning">
+									<h2><span>Frequency</span></h2>
+									<div role="tabpanel" class="tab-pane" id="Standard">
+										<ul class="list-unstyled btn-group" data-toggle="buttons">
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="cleaning" autocomplete="off">
+													<strong>One Time</strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="cleaning" autocomplete="off">
+													<strong>Weekly <span class="discount">5% Off</span></strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="cleaning" autocomplete="off">
+													<strong><span class="popular">Most Popular</span>Bi-Weekly <span class="discount">10% Off</span></strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="cleaning" autocomplete="off">
+													<strong>Monthly <span class="discount">15% Off</span></strong>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="deep">
+										<ul class="list-unstyled btn-group" data-toggle="buttons">
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="deep" autocomplete="off">
+													<strong>One Time</strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary disabled">
+													<input type="radio" name="deep" disabled>
+													<strong>Weekly <span class="discount">5% Off</span></strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary disabled">
+													<input type="radio" name="deep" disabled>
+													<strong>Bi-Weekly <span class="discount">10% Off</span></strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="deep" autocomplete="off">
+													<strong>Monthly <span class="discount">15% Off</span></strong>
+												</label>
+											</li>
+										</ul>
+									</div>
+									<div role="tabpanel" class="tab-pane" id="move">
+										<ul class="list-unstyled btn-group" data-toggle="buttons">
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="move" autocomplete="off">
+													<strong>One Time</strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary disabled">
+													<input type="radio" name="move" disabled>
+													<strong>Weekly <span class="discount">5% Off</span></strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary disabled">
+													<input type="radio" name="move" disabled>
+													<strong>Bi-Weekly <span class="discount">10% Off</span></strong>
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary disabled">
+													<input type="radio" name="move" disabled>
+													<strong>Monthly <span class="discount">15% Off</span></strong>
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<h2><span>Date &amp; Time</span></h2>
+							<div class="form-group date-holder">
+								<input type="text" id="datepicker" onfocus="blur();" placeholder="Select Date" class="form-control" autocomplete="off">
+							</div>
+							<!-- timings -->
+							<section class="timing">
+								<div class="selected-time">
+									<a href="javascript:;" class="btn btn-default">Change Time</a>
+									<time datetime="2015-04-16">Arrival:  1:00 - 2:00 pm</time>
+								</div>
+								<div class="row time-holder" data-toggle="buttons">
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">8:00 - 9:00 am
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">9:00 - 10:00 am
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">10:00 - 11:00 am
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">11:00 - 12:00 pm
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">12:00 - 1:00 pm
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">1:00 - 2:00 pm
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">2:00 - 3:00 pm
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">3:00 - 4:00 pm
+										</label>
+									</div>
+									<div class="col-xs-4">
+										<label class="btn btn-primary">
+											<input type="radio" name="arrival">4:00 - 5:00 pm
+										</label>
+									</div>
+								</div>
+							</section>
+							<h2><span>Address</span></h2>
+							<div class="row">
+								<div class="col-md-9">
+									<div class="custom-select" id="main-location">
+										<strong class="form-control">Main Location</strong>
+										<ul class="list-unstyled">
+											<li><a href="javascript:;">Location 1</a></li>
+											<li><a href="javascript:;">Location 2</a></li>
+											<li><a href="javascript:;">Location 3</a></li>
+											<li><a href="javascript:;">Location 4</a></li>
+											<li><a href="javascript:;">Location 5</a></li>
+										</ul>
+										<input type="hidden" class="hidden-field">
+									</div>
+								</div>
+								<div class="col-md-3 hidden-sm hidden-xs">
+									<a href="#" class="add-location popup-opener" data-target="#add-location">add location</a>
+								</div>
+							</div>
+							<h2>
+								<a href="javascript:;" class="extras-opener collapsed" data-toggle="collapse" data-target="#extras">Show <span class="all">All</span><span class="less">Less</span></a>
+								<span>Extras</span>
+							</h2>
+							<div id="extras" class="extras extras-hides collapse" role="tablist">
+								<ul class="list-unstyled hidden-sm hidden-xs">
+									<li>
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-2.png" alt="image descriptions">
+												<img src="images/icon-2-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Inside Oven</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li>
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-5.png" alt="image descriptions">
+												<img src="images/icon-5-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Walls &amp; Doors</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li>
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-6.png" alt="image descriptions">
+												<img src="images/icon-6-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Carpet</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+								</ul>
+								<ul class="list-unstyled">
+									<li>
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-1.png" alt="image descriptions">
+												<img src="images/icon-1-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Inside Fridge</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li class="hidden-lg hidden-md">
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-2.png" alt="image descriptions">
+												<img src="images/icon-2-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Inside Oven</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li>
+										<label class="btn btn-primary opener extra-opener">
+											<span class="icon">
+												<img src="images/icon-3.png" alt="image descriptions">
+												<img src="images/icon-3-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Cabinets</strong>
+												<strong class="price">$12</strong>
+												<span class="detail">Qty. 1-4 . . . $12</span>
+											</span>
+											<span class="hover-txt">Select Cabinet Quantity</span>
+										</label>
+									</li>
+									<li>
+										<label class="btn btn-primary opener windown-opener">
+											<span class="icon">
+												<img src="images/icon-4.png" alt="image descriptions">
+												<img src="images/icon-4-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Windows</strong>
+												<strong class="price">$12</strong>
+												<span class="detail">Qty. 1-4 . . . $12</span>
+											</span>
+											<span class="hover-txt">Select Interior Windows</span>
+										</label>
+									</li>
+								</ul>
+								<div class="extra-slide collapse" id="extra-slide">
+									<ul class="inner list-unstyled" data-toggle="buttons">
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="cabinet">
+												<span class="qty">1 - 4</span>
+												<span class="img"><img src="images/icon-3.png" alt="image descriptions"></span>
+												<span class="price text-right">$12</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="cabinet">
+												<span class="qty">5 - 8</span>
+												<span class="img"><img src="images/icon-3.png" alt="image descriptions"></span>
+												<span class="price text-right">$17</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="cabinet">
+												<span class="qty">9 - 12</span>
+												<span class="img"><img src="images/icon-3.png" alt="image descriptions"></span>
+												<span class="price text-right">$22</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="cabinet">
+												<span class="qty">13 - 16</span>
+												<span class="img"><img src="images/icon-3.png" alt="image descriptions"></span>
+												<span class="price text-right">$26</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="cabinet">
+												<span class="qty">17 - 20</span>
+												<span class="img"><img src="images/icon-3.png" alt="image descriptions"></span>
+												<span class="price text-right">$30</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<div class="windown-slide collapse" id="interior-slide">
+									<ul class="inner list-unstyled" data-toggle="buttons">
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="windown">
+												<span class="qty">1 - 4</span>
+												<span class="img"><img src="images/icon-4.png" alt="image descriptions"></span>
+												<span class="price text-right">$12</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="windown">
+												<span class="qty">5 - 8</span>
+												<span class="img"><img src="images/icon-4.png" alt="image descriptions"></span>
+												<span class="price text-right">$17</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="windown">
+												<span class="qty">9 - 12</span>
+												<span class="img"><img src="images/icon-4.png" alt="image descriptions"></span>
+												<span class="price text-right">$22</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="windown">
+												<span class="qty">13 - 16</span>
+												<span class="img"><img src="images/icon-4.png" alt="image descriptions"></span>
+												<span class="price text-right">$26</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="windown">
+												<span class="qty">17 - 20</span>
+												<span class="img"><img src="images/icon-4.png" alt="image descriptions"></span>
+												<span class="price text-right">$30</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<ul class="list-unstyled">
+									<li class="hidden-lg hidden-md">
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-5.png" alt="image descriptions">
+												<img src="images/icon-5-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Walls &amp; Doors</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li class="hidden-lg hidden-md">
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-6.png" alt="image descriptions">
+												<img src="images/icon-6-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Carpet</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li>
+										<label class="btn btn-primary">
+											<input type="checkbox">
+											<span class="icon">
+												<img src="images/icon-7.png" alt="image descriptions">
+												<img src="images/icon-7-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Stair Case</strong>
+												<strong class="price">$12</strong>
+											</span>
+										</label>
+									</li>
+									<li>
+										<label class="btn btn-primary opener laundry-opener">
+											<span class="icon">
+												<img src="images/icon-8.png" alt="image descriptions">
+												<img src="images/icon-8-h.png" alt="image descriptions" class="hover">
+											</span>
+											<span class="text">
+												<strong class="title">Laundry</strong>
+												<strong class="price">$12</strong>
+												<span class="detail">Qty. 1-4 . . . $12</span>
+											</span>
+											<span class="hover-txt">Select Laundry</span>
+										</label>
+									</li>
+								</ul>
+								<div class="laundry-slide collapse" id="laundry-slide">
+									<ul class="inner list-unstyled" data-toggle="buttons">
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="laundry">
+												<span class="qty">1 - 4</span>
+												<span class="img"><img src="images/icon-8.png" alt="image descriptions"></span>
+												<span class="price text-right">$12</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="laundry">
+												<span class="qty">5 - 8</span>
+												<span class="img"><img src="images/icon-8.png" alt="image descriptions"></span>
+												<span class="price text-right">$17</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="laundry">
+												<span class="qty">9 - 12</span>
+												<span class="img"><img src="images/icon-8.png" alt="image descriptions"></span>
+												<span class="price text-right">$22</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="laundry">
+												<span class="qty">13 - 16</span>
+												<span class="img"><img src="images/icon-8.png" alt="image descriptions"></span>
+												<span class="price text-right">$26</span>
+											</label>
+										</li>
+										<li>
+											<label class="btn btn-primary">
+												<input type="radio" name="laundry">
+												<span class="qty">17 - 20</span>
+												<span class="img"><img src="images/icon-8.png" alt="image descriptions"></span>
+												<span class="price text-right">$30</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- Cleaning Supplies -->
+							<div class="cleaning-supplies">
+								<div class="title-bar">
+									<a href="#supplies-popup" class="btn-see" data-toggle="modal"><span class="hidden-sm">See </span>maid’s supplies</a>
+									<h2><span>Cleaning Supplies</span></h2>
+								</div>
+								<div class="row">
+									<div class="col-md-9">
+										<ul class="btn-group list-unstyled" data-toggle="buttons">
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="supplies" autocomplete="off">Use Maid’s $5
+												</label>
+											</li>
+											<li>
+												<label class="btn btn-primary">
+													<input type="radio" name="supplies" autocomplete="off">Use Mine
+												</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Cleaning Supplies popup -->
+							<div class="modal supplies-popup" id="supplies-popup" tabindex="-1" role="dialog" aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-body">
+											<strong class="heading hidden-xs">Cleaning Supplies</strong>
+											<strong class="subhead">The necessary supplies that Book A Maid Cleaning Professionals will bring:</strong>
+											<div class="col-holder">
+												<div class="col">
+													<div class="icon">
+														<img src="images/icon-12.png" alt="General Cleaners">
+													</div>
+													<div class="text">
+														<h3>General Cleaners</h3>
+														<ul class="list-unstyled">
+															<li>Disinfectant Cleaner</li>
+															<li>Glass Cleaner</li>
+															<li>Multi-Purpose Cleaner</li>
+															<li>Wood Polisher</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col">
+													<div class="icon">
+														<img src="images/icon-13.png" alt="Specialty Cleaners">
+													</div>
+													<div class="text">
+														<h3>Specialty Cleaners</h3>
+														<ul class="list-unstyled">
+															<li>Tile &amp; Grout Cleaner</li>
+															<li>Wood Floor Cleaner</li>
+															<li>Oven Cleaner</li>
+															<li>Stainless Steel Cleaner</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-holder">
+												<div class="col">
+													<div class="icon">
+														<img src="images/icon-14.png" alt="Towels">
+													</div>
+													<div class="text">
+														<h3>Towels</h3>
+														<ul class="list-unstyled">
+															<li>Microfiber Cloth Towels</li>
+															<li>T-Shirt Rags</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col">
+													<div class="icon">
+														<img src="images/icon-15.png" alt="Gloves &amp; Containers">
+													</div>
+													<div class="text">
+														<h3>Gloves &amp; Containers</h3>
+														<ul class="list-unstyled">
+															<li>Pair of Gloves</li>
+															<li>Spray Bottle</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="col-holder">
+												<div class="col">
+													<div class="icon">
+														<img src="images/icon-16.png" alt="Brushes &amp; Sponges">
+													</div>
+													<div class="text">
+														<h3>Brushes &amp; Sponges</h3>
+														<ul class="list-unstyled">
+															<li>Power Scrub Brush</li>
+															<li>Tile &amp; Grout Scrub Brush</li>
+															<li>Medium &amp; Light Sponges</li>
+															<li>Steel Wool Soap Pads</li>
+															<li>Heavy Duty Deck Brush</li>
+														</ul>
+													</div>
+												</div>
+												<div class="col">
+													<div class="icon">
+														<img src="images/icon-17.png" alt="Tools">
+													</div>
+													<div class="text">
+														<h3>Tools</h3>
+														<ul class="list-unstyled">
+															<li>Broom &amp; Dustpan</li>
+															<li>Small Whisk Broom</li>
+															<li>Microfiber Floor Mop &amp; Pads</li>
+															<li>Dust mop</li>
+															<li>Microfiber Extendable Duster</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="btn-holder hidden-xs">
+												<div class="btn-col">
+													<a href="javascript:;" class="btn btn-disabled" data-dismiss="modal">
+														<strong class="no">No</strong>
+														<span>I will provide the necessary supplies</span>
+													</a>
+												</div>
+												<div class="btn-col">
+													<a href="javascript:;" class="btn btn-success" data-dismiss="modal">
+														<strong class="yes">Yes</strong>
+														<span>Have my maid bring the supplies</span>
+													</a>
+												</div>
+											</div>
+											<span class="disclaimer hidden-xs">Disclaimer: ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium ed ut perspiciatis unde omnis iste natus error.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="box">
+								<h3>Special Instructions <a data-toggle="collapse" class="opener collapsed" href="#comments"></a></h3>
+								<div class="collapse" id="comments">
+									<div class="form-group">
+										<label class="label">Instructions and comments for the maid</label>
+										<textarea class="form-control" rows="10" cols="30"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="price-box">
+								<strong class="price">Your price <span>$125</span> for Bi-weekly cleaning</strong>
+								<button class="btn btn-success" type="submit">Next</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<!-- Booking Summary -->
+						<div class="summary">
+							<h3>Book A Maid Summary</h3>
+							<address>Wednesday, March 18th, 2015 - Arrival 10:00 - 11:00 AM <br>545 Lexington Avenue, New York, NY, 10023, Apt F14</address>
+							<strong class="duration"><span>Duration:</span> 3 hours of cleaning</strong>
+							<div class="detail">
+								<dl>
+									<dt>Standard cleaning <span class="frequency">Every week:</span></dt>
+									<dd><span>$26.00</span></dd>
+								</dl>
+								<dl class="inside">
+									<dt><a href="#" class="btn-close"></a>Inside fridge:</dt>
+									<dd><span>$8.00</span></dd>
+									<dt><a href="#" class="btn-close"></a>Cleaning supplies:</dt>
+									<dd><span>$8.00</span></dd>
+									<dt><a href="#" class="btn-close"></a>Inside oven:</dt>
+									<dd><span>$10.00</span></dd>
+								</dl>
+							</div>
+							<div class="custom-select extra-services" id="extra-services">
+								<strong class="form-control">Select Extra Services to add</strong>
+								<ul class="list-unstyled">
+									<li>
+										<a href="javascript:;">
+											<span class="title">Walls &amp; Doors</span>
+											<strong class="price"><span>$12.00</span></strong>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="title">Carpet</span>
+											<strong class="price"><span>$12.00</span></strong>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="title">Staircase</span>
+											<strong class="price"><span>$12.00</span></strong>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<span class="title">Cleaning Supplies</span>
+											<strong class="price"><span>$12.00</span></strong>
+										</a>
+									</li>
+								</ul>
+								<input type="hidden" class='hidden-field'>
+							</div>
+							<!-- Discount Code -->
+							<div class="discount">
+								<a href="#card-discount" class="apply-gift collapsed" data-toggle="collapse">Apply Gift Cards &amp; Discounts</a>
+								<div class="collapse clearfix" id="card-discount">
+									<div class="form-group">
+										<a href="#" class="btn btn-success">APPLY</a>
+										<label for="discounts" class="label">Enter Code</label>
+										<input type="text" id="discounts" class="form-control" autocomplete="off">
+									</div>
+								</div>
+								<dl class="hidden">
+									<dt><a href="#" class="btn-close"></a>Super Saver Code</dt>
+									<dd><span>- $10.00</span></dd>
+								</dl>
+							</div>
+							<dl>
+								<dt>Tax</dt>
+								<dd><span>$10.00</span></dd>
+							</dl>
+							<div class="result">
+								<div class="total-bill clearfix">
+									<div class="clearfix">
+										<strong class="heading">Total:</strong>
+										<strong class="price">$46.00</strong>
+									</div>
+									<strong class="ending">Visa Ending: 5967 <a href="#">Edit</a></strong>
+								</div>
+								<button class="btn btn-success" type="submit">
+									<span>BOOK APPOINTMENT</span>
+									<em class="monthly">Choosing bi-monthly cleaning requires a min. 3 mo. commitment</em>
+								</button>
+								<span class="note">By clicking the button above, you agree to the Book A Maid <a href="#">terms &amp; conditions</a> and <a href="#">privacy policy</a>.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<!-- page logo -->
+						<div class="logo"><a href="#"><img src="images/logo2.png" alt="BOOK A MAID"></a></div>
+						<!-- address -->
+						<address>Book a Maid, LLC <br>12345 N. Street Name Rd. <br>City Name,ST 98765</address>
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel">Call Us: 1-866-673-1005</a>
+						<!-- social networks -->
+						<ul class="social-networks list-unstyled">
+							<li class="facebook"><a href="#">facebook</a></li>
+							<li class="twitter"><a href="#">twitter</a></li>
+							<li class="google-plus"><a href="#">google plus</a></li>
+							<li class="linkedin"><a href="#">linkedin</a></li>
+						</ul>
+						<!-- Copyright -->
+						<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+					</div>
+					<!-- footer navigations -->
+					<div class="col-md-9 col-sm-8">
+						<div class="row">
+							<nav class="col-md-3 col-sm-6">
+								<h3>About US</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">The Company</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Vision</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>Areas served</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Manhattan, NY</a></li>
+									<li><a href="#">Brooklyn, NY</a></li>
+									<li><a href="#">Queens, NY</a></li>
+									<li><a href="#">Long Ialand, NY</a></li>
+									<li><a href="#">Staten Island, NY</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>customer service</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Simple Pricing</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">F.A.Q.</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>contact</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Basic info</a></li>
+									<li><a href="#">Map</a></li>
+									<li><a href="#">Contact Form</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container visible-xs">
+				<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+			</div>
+		</footer>
+		<!-- Login form -->
+		<div class="modal login-form" id="login-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong class="heading">Login</strong>
+					</div>
+					<form action="#" class="modal-body">
+						<button type="button" class="btn btn-primary">Login with Facebook</button>
+						<strong class="divider"><span>or</span></strong>
+						<div class="form-group">
+							<label class="label" for="login-email">Email Address</label>
+							<input type="email" id="login-email" class="form-control">
+							<span class="help-block">This is not valid email address</span>
+						</div>
+						<div class="form-group password">
+							<label class="label" for="password">Password</label>
+							<input type="password" id="password" class="form-control">
+							<span class="help-block">This is a mandatory field</span>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-6">
+								<label for="remember-me" class="custom-checkbox">
+									<input type="checkbox" id="remember-me">
+									<span class="custom-input"></span>
+									<span class="custom-label">Remember Me</span>
+								</label>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a href="#" class="forgot">Forgot Password?</a>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-success">LOGIN</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<a href="javascript:;" class="overlay"></a>
+		<!-- Add location popup -->
+		<div class="popup location-popup" id="add-location">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Add Location</h2>
+					<h3><span>Location Name</span></h3>
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Farm house">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<label class="custom-checkbox" for="make-primary3">
+								<input type="checkbox" id="make-primary3" autocomplete="off">
+								<span class="custom-input"></span>
+								<span>Make Primary Location</span>
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10">
+							<h3><span>Street Address</span></h3>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="545 Lexington Avenue, New York, NY, 10023">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<h3 class="small"><span>Apt. #</span></h3>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="J23">
+								<span class="help-block">this is a mandatory field</span>
+							</div>
+						</div>
+					</div>
+					<div class="row rooms">
+						<div class="col-sm-7">
+							<h3><span>Bedrooms</span></h3>
+							<ul class="list-unstyled btn-group item6" id="bedrooms" data-toggle="buttons">
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">0
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">1
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">2
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">3
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">4
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bedrooms" autocomplete="off">5+
+									</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-5">
+							<h3><span>Bathrooms</span></h3>
+							<ul class="list-unstyled btn-group" id="bathrooms" data-toggle="buttons">
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">1
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">2
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">3
+									</label>
+								</li>
+								<li>
+									<label class="btn btn-primary">
+										<input type="radio" name="bathrooms" autocomplete="off">4+
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn-holder">
+						<div class="clearfix">
+							<a href="#" class="btn btn-primary">Add Location</a>
+						</div>
+						<a href="#" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/typekit.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="js/ui-calender.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="http://tinymce.cachefly.net/4.2/tinymce.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/jquery.custom.js"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto!important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>BOOK A MAID</title>
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all">
+	<link type="text/css" rel="stylesheet" href="css/all.css" media="all">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body onLoad="pageLoad()">
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header">
+			<!-- main navigation -->
+			<nav id="nav" class="collapse">
+				<div class="container">
+					<ul class="list-inline">
+						<li class="visible-xs-inline-block"><a href="#"><span class="icon-home"></span>HOME</a></li>
+						<li><a href="#"><span class="icon-services"></span>services</a></li>
+						<li><a href="#"><span class="icon-questions"></span>how it works</a></li>
+						<li><a href="faq.html"><span class="icon-qa"></span>f.a.q’s</a></li>
+						<li><a href="#"><span class="icon-contact"></span>contact us</a></li>
+						<li class="author"> <!-- use class "user-active" for vissible SIGN OUT option -->
+							<a href="#login-form" class="login" data-toggle="modal"><span class="icon-login"></span>sign in</a>
+							<a href="#" class="logout"><span class="icon-logout"></span>SIGN OUT</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4 col-xs-2 visible-xs">
+						<a href="#nav" class="navbar-toggle" data-toggle="collapse" aria-expanded="false">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="title">MENU</span>
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<!-- page logo -->
+						<div class="logo">
+							<a href="index.html">
+								<img src="images/logo.png" alt="BOOK A MAID" class="hidden-xs">
+								<img src="images/logo2.png" alt="BOOK A MAID" class="visible-xs">
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-8 col-xs-2 text-right visible-xs">
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel icon-tel visible-xs-inline-block"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main" role="main" class="container">
+			<form action="#" class="user-form">
+				<h1>User Login</h1>
+				<div class="alert alert-danger" role="alert">
+					<p><strong>Warning!</strong> Better check yourself, you're not looking too good.</p>
+					<ul>
+						<li>Better check yourself</li>
+						<li>lf, you're not looki</li>
+					</ul>
+				</div>
+				<div class="form-group">
+					<label class="label" for="login-email">Email Address</label>
+					<input type="email" id="login-email" class="form-control">
+					<span class="help-block">This is not valid email address</span>
+				</div>
+				<div class="form-group password">
+					<label class="label" for="password">Password</label>
+					<input type="password" id="password" class="form-control">
+					<span class="help-block">This is a mandatory field</span>
+				</div>
+				<div class="row">
+					<div class="form-group col-xs-6">
+						<label for="remember-password" class="custom-checkbox">
+							<input type="checkbox" id="remember-password">
+							<span class="custom-input"></span>
+							<span class="custom-label">Remember Me</span>
+						</label>
+					</div>
+					<div class="col-xs-6 text-right">
+						<a href="#" class="forgot">Forgot Password?</a>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-success">LOGIN</button>
+			</form>
+		</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<div class="container hidden-xs">
+				<div class="row">
+					<div class="col-md-3 col-sm-4">
+						<!-- page logo -->
+						<div class="logo"><a href="#"><img src="images/logo2.png" alt="BOOK A MAID"></a></div>
+						<!-- address -->
+						<address>Book a Maid, LLC <br>12345 N. Street Name Rd. <br>City Name,ST 98765</address>
+						<!-- contact number -->
+						<a href="tel:18666731005" class="tel">Call Us: 1-866-673-1005</a>
+						<!-- social networks -->
+						<ul class="social-networks list-unstyled">
+							<li class="facebook"><a href="#">facebook</a></li>
+							<li class="twitter"><a href="#">twitter</a></li>
+							<li class="google-plus"><a href="#">google plus</a></li>
+							<li class="linkedin"><a href="#">linkedin</a></li>
+						</ul>
+						<!-- Copyright -->
+						<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+					</div>
+					<!-- footer navigations -->
+					<div class="col-md-9 col-sm-8">
+						<div class="row">
+							<nav class="col-md-3 col-sm-6">
+								<h3>About US</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">The Company</a></li>
+									<li><a href="#">History</a></li>
+									<li><a href="#">Vision</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>Areas served</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Manhattan, NY</a></li>
+									<li><a href="#">Brooklyn, NY</a></li>
+									<li><a href="#">Queens, NY</a></li>
+									<li><a href="#">Long Ialand, NY</a></li>
+									<li><a href="#">Staten Island, NY</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>customer service</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Simple Pricing</a></li>
+									<li><a href="#">Careers</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">F.A.Q.</a></li>
+								</ul>
+							</nav>
+							<nav class="col-md-3 col-sm-6">
+								<h3>contact</h3>
+								<ul class="list-unstyled">
+									<li><a href="#">Basic info</a></li>
+									<li><a href="#">Map</a></li>
+									<li><a href="#">Contact Form</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container visible-xs">
+				<p>Copyright &copy; 2015.<a href="#">Book a Maid</a>, LLC</p>
+			</div>
+		</footer>
+		<!-- Login form -->
+		<div class="modal login-form" id="login-form" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<strong class="heading">Login</strong>
+					</div>
+					<form action="#" class="modal-body">
+						<button type="button" class="btn btn-primary">Login with Facebook</button>
+						<strong class="divider"><span>or</span></strong>
+						<div class="form-group">
+							<label class="label" for="login-email">Email Address</label>
+							<input type="email" id="login-email" class="form-control">
+							<span class="help-block">This is not valid email address</span>
+						</div>
+						<div class="form-group password">
+							<label class="label" for="password">Password</label>
+							<input type="password" id="password" class="form-control">
+							<span class="help-block">This is a mandatory field</span>
+						</div>
+						<div class="row">
+							<div class="form-group col-xs-6">
+								<label for="remember-me" class="custom-checkbox">
+									<input type="checkbox" id="remember-me">
+									<span class="custom-input"></span>
+									<span class="custom-label">Remember Me</span>
+								</label>
+							</div>
+							<div class="col-xs-6 text-right">
+								<a href="#" class="forgot">Forgot Password?</a>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-success">LOGIN</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- popup -->
+		<a href="javascript:;" class="overlay"></a>
+		<!-- reschedule popup -->
+		<div class="popup reschedule" id="reschedule">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<div class="step1">
+						<h2><i class="icon-warning"></i>Warning</h2>
+						<p>Cancellations within 48 hours of an appoinment will result in a $40.00 cancellation fee. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+						<div class="text-center">
+							<a href="javascript:;" class="btn btn-success popup-close">DON’T RESCHEDULE</a>
+							<a href="javascript:;" class="btn-normal continue">Continue Reschedule</a>
+						</div>
+					</div>
+					<form action="#" class="step2">
+						<h2>Reschedule booking</h2>
+						<div class="form-group date-holder">
+							<i class="icon-calender"></i>
+							<input type="text" id="reschedule-date" class="form-control" value="March 18th, 2015" onFocus="blur();">
+						</div>
+						<div class="custom-select" id="time">
+							<strong class="form-control">3:00-4:00pm</strong>
+							<ul class="list-unstyled">
+								<li><a href="javascript:;">8:00-9:00am</a></li>
+								<li><a href="javascript:;">10:00-11:00am</a></li>
+								<li><a href="javascript:;">11:00-11:50am</a></li>
+								<li><a href="javascript:;">12:00-1:00pm</a></li>
+								<li><a href="javascript:;">12:00-1:00pm</a></li>
+								<li><a href="javascript:;">1:00-2:00pm</a></li>
+								<li><a href="javascript:;">2:00-3:00pm</a></li>
+								<li><a href="javascript:;">3:00-4:00pm</a></li>
+								<li><a href="javascript:;">4:00-5:00pm</a></li>
+							</ul>
+							<input type="hidden" class="hidden-field" value="3:00-4:00pm">
+						</div>
+						<label for="reschedule-all" class="custom-checkbox">
+							<input type="checkbox" id="reschedule-all">
+							<span class="custom-input"></span>
+							<span>Reschedule all subsequent bookings</span>
+						</label>
+						<div class="text-center">
+							<a href="#" class="btn btn-success">Reschedule Booking</a>
+							<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- reschedule popup -->
+		<div class="popup schedule-cancel" id="schedule-cancel">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Cancel booking</h2>
+					<p>Are you sure you want to cancel? You can always <a href="#">reschedule instead?</a></p>
+					<h3>Why are you canceling?</h3>
+					<ul class="list-unstyled">
+						<li>
+							<label for="moving-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="moving-reason">
+								<span class="custom-input"></span>
+								<span>Moving</span>
+							</label>
+						</li>
+						<li>
+							<label for="unsatisfied-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="unsatisfied-reason">
+								<span class="custom-input"></span>
+								<span>Unsatisfied</span>
+							</label>
+						</li>
+						<li>
+							<label for="expensive-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="expensive-reason">
+								<span class="custom-input"></span>
+								<span>Too expensive</span>
+							</label>
+						</li>
+						<li>
+							<label for="other-reason" class="custom-checkbox">
+								<input type="radio" name="why-canceling" id="other-reason">
+								<span class="custom-input"></span>
+								<span>Other</span>
+							</label>
+						</li>
+					</ul>
+					<label for="cancel-all" class="custom-checkbox cancel-all">
+						<input type="checkbox" id="cancel-all">
+						<span class="custom-input"></span>
+						<span>Cancel all future bookings</span>
+					</label>
+					<div class="text-center">
+						<a href="#" class="btn btn-success">Cancel Booking</a>
+						<a href="javascript:;" class="btn-normal popup-close">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- invitation popup -->
+		<div class="popup invitation" id="invitation">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Earn free cleanings</h2>
+					<h3>Refer your friends!</h3>
+					<p>You will receive $50.00 off your next booking for each friend that completes a booking!</p>
+					<form action="javascript:;">
+						<div class="form-holder">
+							<button type="submit" class="btn btn-success">SEND</button>
+							<div class="text">
+								<input type="email" placeholder="Enter email address" class="form-control">
+							</div>
+						</div>
+						<span class="sent">INVITE SENT!</span>
+					</form>
+					<ul class="social-share list-unstyled">
+						<li class="facebook"><a href="#"><span class="icon"><img src="images/ico-facebook.png" alt=""></span>Share on Facebook</a></li>
+						<li class="twitter"><a href="#"><span class="icon"><img src="images/ico-twitter.png" alt=""></span>Share on Twitter</a></li>
+						<li class="google-plus"><a href="#"><span class="icon"><img src="images/ico-google-plus.png" alt=""></span>Share on Google+</a></li>
+						<li class="link"><a href="#"><span class="icon"><img src="images/ico-link.png" alt=""></span><span class="hidden-xs">bookamaid.com/ref/al</span><span class="visible-xs">Copy Link to Clipboard</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- rating popup -->
+		<div class="popup rating" id="rating">
+			<div class="box-holder">
+				<form action="#" class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Rate Our Service</h2>
+					<div class="custom-select" id="service-date">
+						<strong class="form-control">Select service date</strong>
+						<ul class="list-unstyled">
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">March 13th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">March 6th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">February 28th, 3:00-4:00pm</time>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<ul class="rating list-unstyled">
+										<li class="active"></li>
+										<li class="active"></li>
+										<li class="active"></li>
+										<li></li>
+										<li></li>
+									</ul>
+									<time datetime="2015-07-06">February 21st, 3:00-4:00pm</time>
+								</a>
+							</li>
+						</ul>
+						<input type="hidden" class="hidden-field" value="3:00-4:00pm">
+					</div>
+					<div class="author-holder">
+						<div class="author unknown">
+							<a href="#">unkown</a>
+						</div>
+						<ul class="star-rating">
+							<li><a href="#" title="Rate this 1 star out of 5" class="one-star">1</a></li>
+							<li><a href="#" title="Rate this 2 stars out of 5" class="two-stars">2</a></li>
+							<li><a href="#" title="Rate this 3 stars out of 5" class="three-stars">3</a></li>
+							<li><a href="#" title="Rate this 4 stars out of 5" class="four-stars">4</a></li>
+							<li><a href="#" title="Rate this 5 stars out of 5" class="five-stars">5</a></li>
+						</ul>
+					</div>
+					<textarea placeholder="Optional comments about our service" class="form-control disable"></textarea>
+					<span class="submit disable">SUBMIT RATING</span>
+					<button type="submit" class="btn btn-success">SUBMIT RATING</button>
+				</form>
+			</div>
+		</div>
+		<!-- new-booking popup -->
+		<div class="popup booking-popup" id="new-booking">
+			<div class="box-holder">
+				<div class="box">
+					<a href="javascript:;" class="btn-colse popup-close">close</a>
+					<h2>Book a new Appoinment</h2>
+					<p>Would you like to use your settings from your previous booking?</p>
+					<div class="buttons row">
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>YES</strong>Use previous settings</a>
+						</div>
+						<div class="col-xs-6">
+							<a href="new-booking.html" class="btn btn-success"><strong>NO</strong>Don’t use previous settings</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/typekit.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="js/ui-calender.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/jquery.custom.js"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto!important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+</html>
